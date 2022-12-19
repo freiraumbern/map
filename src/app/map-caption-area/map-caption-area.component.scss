@@ -1,0 +1,12 @@
+mat-chip {
+  margin: 0.2rem;
+}
+
+.small-chip {
+  font-size: 0.7rem;
+
+  span .mat-mdc-standard-chip .mdc-evolution-chip__action--primary {
+    padding-left: 4px !important;
+    padding-right: 4px !important;
+  }
+}

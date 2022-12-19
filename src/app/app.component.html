@@ -1,0 +1,16 @@
+<ng-http-loader 
+  [backdrop]="true"
+  [backgroundColor]="'white'"
+  [debounceDelay]="100"
+  [extraDuration]="300"
+  [minDuration]="300"
+  [spinner]="spinkit.skDoubleBounce"
+  [backdropBackgroundColor]="'#1f1c1c'">
+</ng-http-loader>
+<mat-toolbar color="primary">
+  <span>Grundlos Kampagne</span>
+  <a mat-button routerLink="/" routerLinkActive="active">Karte</a>
+  <a mat-button routerLink="/table" routerLinkActive="active">Tabelle</a>
+  <a mat-button routerLink="/about" routerLinkActive="active">Über</a>
+</mat-toolbar>
+<router-outlet></router-outlet>

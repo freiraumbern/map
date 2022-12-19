@@ -1,0 +1,32 @@
+<h1 mat-dialog-title>{{data.ownership.egrid}}</h1>
+<div mat-dialog-content>
+    <mat-list>
+        <div mat-subheader>Eigentümer*innen</div>
+        <mat-list-item *ngFor="let owner of data.ownership.owners">
+          <mat-icon matListItemIcon>person</mat-icon>
+          <div matListItemTitle>{{owner}}</div>
+        </mat-list-item>
+    </mat-list>
+
+    <mat-list>
+        <div mat-subheader>Adressen</div>
+        <mat-list-item *ngFor="let address of data.ownership.address.split('|')">
+          <mat-icon matListItemIcon>house</mat-icon>
+          <div matListItemTitle>{{address}}</div>
+        </mat-list-item>
+    </mat-list>
+
+    <mat-list>
+        <div mat-subheader>Typ</div>
+        <mat-list-item>
+          <mat-icon matListItemIcon>assignment</mat-icon>
+          <div matListItemTitle class="capitalize" >{{data.ownership.type}}</div>
+        </mat-list-item>
+    </mat-list>
+
+    <iframe [src]="getGoogleMapUrl(data.ownership.address)" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+<div mat-dialog-actions>
+  <button mat-flat-button color="primary" mat-dialog-close>Schliessen</button>
+</div>
+

@@ -1,0 +1,71 @@
+<form class="example-form">
+  <mat-form-field class="example-full-width">
+    <mat-label>Suche</mat-label>
+    <input
+      type="text"
+      matInput
+      [formControl]="searchFormControl"
+      placeholder="Suchbegriff" />
+      <mat-icon matSuffix>search</mat-icon>
+  </mat-form-field>
+</form>
+
+<ngx-datatable
+  #table
+  class="material"
+  [columns]="columns"
+  [columnMode]="ColumnMode.force"
+  [headerHeight]="50"
+  [footerHeight]="50"
+  rowHeight="auto"
+  [limit]="10"
+  [rows]="rows"
+  [loadingIndicator]="isFiltering"
+  [selectionType]="SelectionType.single"
+  (select)="onRowClicked($event)"
+>
+  <ngx-datatable-column name="Egrid" prop="egrid">
+    <ng-template
+      let-rowIndex="rowIndex"
+      let-row="row"
+      ngx-datatable-cell-template>
+      {{ row.ownership.egrid }}
+    </ng-template>
+  </ngx-datatable-column>
+
+  <ngx-datatable-column name="Eigentümer*innen" prop="owners">
+    <ng-template
+      let-rowIndex="rowIndex"
+      let-row="row"
+      ngx-datatable-cell-template>
+      {{ row.ownership?.owners?.join(', ') }}
+    </ng-template>
+  </ngx-datatable-column>
+
+  <ngx-datatable-column name="Adressen" prop="address">
+    <ng-template
+      let-rowIndex="rowIndex"
+      let-row="row"
+      ngx-datatable-cell-template>
+      {{ row.ownership.address }}
+    </ng-template>
+  </ngx-datatable-column>
+
+  <ngx-datatable-column name="Typ" prop="type">
+    <ng-template
+      let-rowIndex="rowIndex"
+      let-row="row"
+      ngx-datatable-cell-template>
+      <span class="capitalize">{{ row.ownership.type }}</span>
+    </ng-template>
+  </ngx-datatable-column>
+
+  <ngx-datatable-column name="Unter Egrids" prop="subs">
+    <ng-template
+      let-rowIndex="rowIndex"
+      let-row="row"
+      ngx-datatable-cell-template>
+      <span class="capitalize">{{ row.ownership?.subEgrids?.join(", ") || '-' }}</span>
+    </ng-template>
+  </ngx-datatable-column>
+</ngx-datatable>

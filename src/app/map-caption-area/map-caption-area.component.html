@@ -1,0 +1,14 @@
+<mat-card>
+    <mat-card-content>
+        <mat-chip-set role="list">
+            <mat-chip 
+            *ngFor="let entry of selection; let i = index"
+            [ngClass]="{'mat-black-font': getBackGroundColor(colors[i]), 'mat-white-font': !getBackGroundColor(colors[i])}" 
+            [ngStyle]="{'background-color': colors[i]}"
+            class="small-chip ellipsis"
+            >
+                {{entry.egrids.length}} {{entry.owner}}
+        </mat-chip>
+        </mat-chip-set>
+    </mat-card-content>
+  </mat-card>
