@@ -1,4 +1,4 @@
-import { Inject, Injectable } from '@angular/core';
+import { Injectable } from '@angular/core';
 import { ByOwnerDataAggregation, DataResponse, Squat } from './model/api';
 import { HttpClient } from '@angular/common/http';
 import { isDevMode } from '@angular/core';
