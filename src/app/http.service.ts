@@ -28,7 +28,6 @@ export class HttpService {
   }
 
   getBaseUrl(): string {
-    console.log(this.baseHref);
     if (!isDevMode()) {
       return window.location.origin + '/map/assets/';
     }
