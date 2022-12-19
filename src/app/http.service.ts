@@ -1,7 +1,7 @@
 import { Inject, Injectable } from '@angular/core';
 import { ByOwnerDataAggregation, DataResponse, Squat } from './model/api';
 import { HttpClient } from '@angular/common/http';
-import { APP_BASE_HREF } from '@angular/common';
+import { isDevMode } from '@angular/core';
 
 @Injectable({
   providedIn: 'root',
@@ -9,12 +9,7 @@ import { APP_BASE_HREF } from '@angular/common';
 export class HttpService {
   baseHref = '';
 
-  constructor(
-    private http: HttpClient,
-    @Inject(APP_BASE_HREF) baseHref: string
-  ) {
-    this.baseHref = baseHref;
-  }
+  constructor(private http: HttpClient) {}
 
   getData() {
     return this.http.get<DataResponse>(
@@ -34,8 +29,8 @@ export class HttpService {
 
   getBaseUrl(): string {
     console.log(this.baseHref);
-    if ((this.baseHref = '/')) {
-      return window.location.origin + this.baseHref + 'assets/';
+    if (!isDevMode()) {
+      return window.location.origin + '/map/assets/';
     }
 
     return window.location.origin + '/assets';
