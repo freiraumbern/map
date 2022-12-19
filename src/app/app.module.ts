@@ -31,6 +31,7 @@ import { NgxDatatableModule } from '@swimlane/ngx-datatable';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { NgHttpCachingModule } from 'ng-http-caching';
+import { APP_BASE_HREF, PlatformLocation } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -68,7 +69,14 @@ import { NgHttpCachingModule } from 'ng-http-caching';
     MatInputModule,
     NgHttpCachingModule,
   ],
-  providers: [HttpService],
+  providers: [
+    HttpService,
+    {
+      provide: APP_BASE_HREF,
+      useFactory: (s: PlatformLocation) => s.getBaseHrefFromDOM(),
+      deps: [PlatformLocation],
+    },
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

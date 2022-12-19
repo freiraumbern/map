@@ -1,31 +1,43 @@
-import { Injectable } from '@angular/core';
+import { Inject, Injectable } from '@angular/core';
 import { ByOwnerDataAggregation, DataResponse, Squat } from './model/api';
 import { HttpClient } from '@angular/common/http';
+import { APP_BASE_HREF } from '@angular/common';
 
 @Injectable({
   providedIn: 'root',
 })
 export class HttpService {
-  constructor(private http: HttpClient) {}
+  baseHref = '';
 
-  /**
-   * load prepared data from same host as frontend is served from
-   */
-  baseUrl = window.location.origin + '/assets';
+  constructor(
+    private http: HttpClient,
+    @Inject(APP_BASE_HREF) baseHref: string
+  ) {
+    this.baseHref = baseHref;
+  }
 
   getData() {
     return this.http.get<DataResponse>(
-      this.baseUrl + '/aggregated-results.json'
+      this.getBaseUrl() + '/aggregated-results.json'
     );
   }
 
   getDataByOwner() {
     return this.http.get<ByOwnerDataAggregation[]>(
-      this.baseUrl + '/by-owners.json'
+      this.getBaseUrl() + '/by-owners.json'
     );
   }
 
   getSquats() {
-    return this.http.get<Squat[]>(this.baseUrl + '/squats.json');
+    return this.http.get<Squat[]>(this.getBaseUrl() + '/squats.json');
+  }
+
+  getBaseUrl(): string {
+    console.log(this.baseHref);
+    if ((this.baseHref = '/')) {
+      return window.location.origin + this.baseHref + 'assets/';
+    }
+
+    return window.location.origin + '/assets';
   }
 }
