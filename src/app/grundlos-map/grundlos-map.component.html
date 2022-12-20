@@ -1,19 +1,25 @@
 <div class="map-container">
-    <app-map-filter [byOwnerData]="byOwnerData" (selectedByOwner)="onByOwnerSelected($event)"></app-map-filter>
-    <div leaflet class="leaflet-container"
-         [leafletOptions]="options"
-         (leafletMapReady)="onMapReady($event)"
-         (leafletMapZoomEnd)="onMapZoomEnd($event)"
-         [leafletLayers]="layers">
-        <div *ngFor="let layerGroup of byOwnerLayerGroups">
-            <div [leafletLayer]="layerGroup"></div>
-        </div>
-        <div *ngIf="squatsLayerGroup" [leafletLayer]="squatsLayerGroup"></div>
+  <app-map-filter
+    [byOwnerData]="byOwnerData"
+    (selectedByOwner)="onByOwnerSelected($event)"
+    (showSquats)="toggleSquats($event)"
+>
+  </app-map-filter>
+  <div
+    leaflet
+    class="leaflet-container"
+    [leafletOptions]="options"
+    (leafletMapReady)="onMapReady($event)"
+    (leafletMapZoomEnd)="onMapZoomEnd($event)"
+    [leafletLayers]="layers">
+    <div *ngFor="let layerGroup of byOwnerLayerGroups">
+      <div [leafletLayer]="layerGroup"></div>
     </div>
-    <app-map-caption-area
-        [hidden]="byOwnerSelection.length === 0"
-        [selection]="byOwnerSelection"
-        [colors]="colors"
-    >
-    </app-map-caption-area>
-</div> 
+    <div *ngIf="squatsLayerGroup && showSquats" [leafletLayer]="squatsLayerGroup"></div>
+  </div>
+  <app-map-caption-area
+    [hidden]="byOwnerSelection.length === 0"
+    [selection]="byOwnerSelection"
+    [colors]="colors">
+  </app-map-caption-area>
+</div>

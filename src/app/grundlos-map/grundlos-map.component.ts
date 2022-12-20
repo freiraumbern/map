@@ -17,6 +17,7 @@ import { ByOwnerDataAggregation, DataResponse, Squat } from '../model/api';
 import { HttpService } from '../http.service';
 import { MatDialog } from '@angular/material/dialog';
 import { EgridDialogComponent } from '../egrid-dialog/egrid-dialog.component';
+import { SquatDialogComponent } from '../squat-dialog/squat-dialog.component';
 
 @Component({
   selector: 'app-grundlos-map',
@@ -74,6 +75,11 @@ export class GrundlosMapComponent implements OnDestroy, OnInit {
   squatsLayerGroup: LayerGroup<Marker> | null = null;
 
   /**
+   * show the squats layer on the map
+   */
+  showSquats = true;
+
+  /**
    * base layer
    */
   layers: Layer[] = [];
@@ -107,10 +113,14 @@ export class GrundlosMapComponent implements OnDestroy, OnInit {
       markers.push(
         marker([parseFloat(squat.lat), parseFloat(squat.long)], {
           icon: this.getSquatIcon(),
-          title: squat.notes,
+          title: squat.address + ', ' + squat.date,
         }).on('click', () => {
           this.zone.run(() => {
-            // open dialog
+            this.dialog.open(SquatDialogComponent, {
+              data: squat,
+              width: '95vw',
+              maxWidth: '100vw',
+            });
           });
         })
       );
@@ -175,6 +185,10 @@ export class GrundlosMapComponent implements OnDestroy, OnInit {
   onByOwnerSelected(selection: ByOwnerDataAggregation[]) {
     this.byOwnerSelection = selection;
     this.createOwnerLayerGroups(selection);
+  }
+
+  toggleSquats(show: boolean) {
+    this.showSquats = show;
   }
 
   ngOnDestroy() {

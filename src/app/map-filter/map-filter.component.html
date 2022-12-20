@@ -1,32 +1,37 @@
 <mat-expansion-panel>
-    <mat-expansion-panel-header>
-      <mat-panel-title>
-        Kategorien Selektieren
-      </mat-panel-title>
-    </mat-expansion-panel-header>
-    <button mat-button (click)="clear()">
-      <mat-icon>clear</mat-icon>
-      Ausahl Löschen
-    </button>
-    <mat-form-field appearance="fill">
-        <mat-label>Eigentümer*in</mat-label>
-        <mat-select [formControl]="multiSelectControl" multiple [value]="selected" (openedChange)="openChange($event)"
-            placeholder="{{selected.length > 0 ? selectedTexts : 'Select'}}">
-            <mat-select-trigger>
-                {{selectedTexts.join(" ")}}
-            </mat-select-trigger>
-            <cdk-virtual-scroll-viewport itemSize="50" [style.height.px]=5*48>
-                <mat-option>
-                  <ngx-mat-select-search [formControl]="searchFormControl"></ngx-mat-select-search>
-                </mat-option>
-                <mat-option
-                 *cdkVirtualFor="let ownerSet of byOwnerDataFiltered"
-                 [value]="ownerSet"
-                 (onSelectionChange)="onSelectionChange($event)"
-                >
-                  {{ownerSet.owner}} / {{ownerSet.egrids.length}} ⌂
-                </mat-option>
-            </cdk-virtual-scroll-viewport>
-	    </mat-select>
-      </mat-form-field>
+  <mat-expansion-panel-header>
+    <mat-panel-title> Kategorien Selektieren </mat-panel-title>
+  </mat-expansion-panel-header>
+  <button mat-button (click)="clear()">
+    <mat-icon>clear</mat-icon>
+    Ausahl Löschen
+  </button>
+  <mat-form-field appearance="fill">
+    <mat-label>Eigentümer*innen nach Anzahl Einträgen absteigend</mat-label>
+    <mat-select
+      [formControl]="multiSelectControl"
+      multiple
+      [value]="selected"
+      (openedChange)="openChange($event)"
+      placeholder="{{ selected.length > 0 ? selectedTexts : 'Select' }}">
+      <mat-select-trigger>
+        {{ selectedTexts.join(' ') }}
+      </mat-select-trigger>
+      <cdk-virtual-scroll-viewport itemSize="50" [style.height.px]="5 * 48">
+        <mat-option>
+          <ngx-mat-select-search
+            [formControl]="searchFormControl"></ngx-mat-select-search>
+        </mat-option>
+        <mat-option
+          *cdkVirtualFor="let ownerSet of byOwnerDataFiltered"
+          [value]="ownerSet"
+          (onSelectionChange)="onSelectionChange($event)">
+          {{ ownerSet.owner }} ({{ ownerSet.egrids.length }})
+        </mat-option>
+      </cdk-virtual-scroll-viewport>
+    </mat-select>
+  </mat-form-field>
+  <mat-checkbox checked="true" (change)="toggleSquats($event)" color="primary"
+    >Besetzungen Anzeigen</mat-checkbox
+  >
 </mat-expansion-panel>

@@ -32,6 +32,8 @@ import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { NgHttpCachingModule } from 'ng-http-caching';
 import { APP_BASE_HREF, PlatformLocation } from '@angular/common';
+import { SquatDialogComponent } from './squat-dialog/squat-dialog.component';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 
 @NgModule({
   declarations: [
@@ -42,6 +44,7 @@ import { APP_BASE_HREF, PlatformLocation } from '@angular/common';
     MapCaptionAreaComponent,
     EgridDialogComponent,
     DataTableComponent,
+    SquatDialogComponent,
   ],
   imports: [
     BrowserModule,
@@ -68,6 +71,7 @@ import { APP_BASE_HREF, PlatformLocation } from '@angular/common';
     MatFormFieldModule,
     MatInputModule,
     NgHttpCachingModule,
+    MatCheckboxModule,
   ],
   providers: [
     HttpService,

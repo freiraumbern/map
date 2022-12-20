@@ -19,6 +19,7 @@ import {
 } from '@angular/cdk/scrolling';
 import { MatOption, MatOptionSelectionChange } from '@angular/material/core';
 import { filter } from 'rxjs/operators';
+import { MatCheckboxChange } from '@angular/material/checkbox';
 
 @Component({
   selector: 'app-map-filter',
@@ -38,6 +39,7 @@ export class MapFilterComponent implements AfterViewInit, OnChanges {
   options: QueryList<MatOption> = new QueryList();
   selectedTexts: string[] = [];
   @Output() selectedByOwner = new EventEmitter<ByOwnerDataAggregation[]>();
+  @Output() showSquats = new EventEmitter<boolean>();
 
   constructor(private cd: ChangeDetectorRef, readonly sd: ScrollDispatcher) {}
 
@@ -90,7 +92,7 @@ export class MapFilterComponent implements AfterViewInit, OnChanges {
 
   displaySelectedTexts() {
     this.selectedTexts = this.selected.map(
-      ownerSet => ownerSet.owner + ' / ' + ownerSet.egrids.length + ' ⌂'
+      ownerSet => ownerSet.owner + ' (' + ownerSet.egrids.length + ')'
     );
   }
 
@@ -127,5 +129,9 @@ export class MapFilterComponent implements AfterViewInit, OnChanges {
     }
     this.displaySelectedTexts();
     this.selectedByOwner.emit(this.selected);
+  }
+
+  toggleSquats(event: MatCheckboxChange) {
+    this.showSquats.emit(event.checked);
   }
 }

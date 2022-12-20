@@ -63,3 +63,9 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .capitalize {
   text-transform: capitalize ;
 }
+
+mat-toolbar {
+  a {
+    text-decoration: none !important;
+  }
+}

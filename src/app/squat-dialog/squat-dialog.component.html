@@ -1,0 +1,25 @@
+<h1 mat-dialog-title>{{ data.address }}</h1>
+<div mat-dialog-content>
+  <mat-list>
+    <div mat-subheader>Infos</div>
+
+    <mat-list-item>
+      <mat-icon matListItemIcon>schedule</mat-icon>
+      <div matListItemTitle>{{ data.date }}</div>
+    </mat-list-item>
+
+    <mat-list-item>
+      <mat-icon matListItemIcon>notes</mat-icon>
+      <div matListItemTitle>{{ data.notes }}</div>
+    </mat-list-item>
+
+    <mat-list-item>
+      <mat-icon matListItemIcon>house</mat-icon>
+      <div matListItemTitle>{{ data.address }}</div>
+    </mat-list-item>
+  </mat-list>
+
+  <div mat-dialog-actions>
+    <button mat-flat-button color="primary" mat-dialog-close>Schliessen</button>
+  </div>
+</div>
