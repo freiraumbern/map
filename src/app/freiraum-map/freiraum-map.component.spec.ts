@@ -1,17 +1,17 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { GrundlosMapComponent } from './grundlos-map.component';
+import { FreiraumMapComponent } from './freiraum-map.component';
 
-describe('GrundlosMapComponent', () => {
-  let component: GrundlosMapComponent;
-  let fixture: ComponentFixture<GrundlosMapComponent>;
+describe('FreiraumMapComponent', () => {
+  let component: FreiraumMapComponent;
+  let fixture: ComponentFixture<FreiraumMapComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [GrundlosMapComponent],
+      declarations: [FreiraumMapComponent],
     }).compileComponents();
 
-    fixture = TestBed.createComponent(GrundlosMapComponent);
+    fixture = TestBed.createComponent(FreiraumMapComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

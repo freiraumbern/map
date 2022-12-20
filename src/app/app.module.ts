@@ -4,7 +4,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { GrundlosMapComponent } from './grundlos-map/grundlos-map.component';
+import { FreiraumMapComponent } from './freiraum-map/freiraum-map.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
@@ -38,7 +38,7 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 @NgModule({
   declarations: [
     AppComponent,
-    GrundlosMapComponent,
+    FreiraumMapComponent,
     AboutComponent,
     MapFilterComponent,
     MapCaptionAreaComponent,

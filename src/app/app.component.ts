@@ -10,7 +10,7 @@ import { Spinkit } from 'ng-http-loader';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'grundlos-map';
+  title = 'freiraum-map';
 
   spinkit = Spinkit;
 

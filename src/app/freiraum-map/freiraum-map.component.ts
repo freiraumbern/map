@@ -20,11 +20,11 @@ import { EgridDialogComponent } from '../egrid-dialog/egrid-dialog.component';
 import { SquatDialogComponent } from '../squat-dialog/squat-dialog.component';
 
 @Component({
-  selector: 'app-grundlos-map',
-  templateUrl: './grundlos-map.component.html',
-  styleUrls: ['./grundlos-map.component.scss'],
+  selector: 'app-freiraum-map',
+  templateUrl: './freiraum-map.component.html',
+  styleUrls: ['./freiraum-map.component.scss'],
 })
-export class GrundlosMapComponent implements OnDestroy, OnInit {
+export class FreiraumMapComponent implements OnDestroy, OnInit {
   options: MapOptions = {
     layers: [
       tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
