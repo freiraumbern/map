@@ -19,6 +19,8 @@
     </mat-list-item>
   </mat-list>
 
+  <iframe [src]="getGoogleMapUrl(data.coordinates)" frameborder="0" style="border:0" allowfullscreen></iframe>
+
   <div mat-dialog-actions>
     <button mat-flat-button color="primary" mat-dialog-close>Schliessen</button>
   </div>
