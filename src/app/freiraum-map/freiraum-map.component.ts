@@ -18,6 +18,8 @@ import { HttpService } from '../http.service';
 import { MatDialog } from '@angular/material/dialog';
 import { EgridDialogComponent } from '../egrid-dialog/egrid-dialog.component';
 import { SquatDialogComponent } from '../squat-dialog/squat-dialog.component';
+import { interpolateRainbow } from 'd3-scale-chromatic';
+import { Chance } from 'chance';
 
 @Component({
   selector: 'app-freiraum-map',
@@ -86,13 +88,20 @@ export class FreiraumMapComponent implements OnDestroy, OnInit {
 
   dataIsReady = false;
 
-  colors = ['#003f5c', '#58508d', '#bc5090', '#ff6361', '#ffa600'];
+  colors: string[] = [];
 
   constructor(
     private httpService: HttpService,
     private zone: NgZone,
     private dialog: MatDialog
-  ) {}
+  ) {
+    for (let i = 0; i < 50; i++) {
+      const value = (1 / 50) * i;
+      this.colors.push(interpolateRainbow(value));
+    }
+    const chance = new Chance(19);
+    this.colors = chance.shuffle(this.colors);
+  }
 
   ngOnInit() {
     forkJoin(
