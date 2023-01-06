@@ -1,14 +1,11 @@
 import { Injectable } from '@angular/core';
 import { ByOwnerDataAggregation, DataResponse, Squat } from './model/api';
 import { HttpClient } from '@angular/common/http';
-import { isDevMode } from '@angular/core';
 
 @Injectable({
   providedIn: 'root',
 })
 export class HttpService {
-  baseHref = '';
-
   constructor(private http: HttpClient) {}
 
   getData() {
@@ -28,10 +25,6 @@ export class HttpService {
   }
 
   getBaseUrl(): string {
-    if (!isDevMode()) {
-      return window.location.origin + '/map/assets/';
-    }
-
-    return window.location.origin + '/assets';
+    return '/assets/';
   }
 }

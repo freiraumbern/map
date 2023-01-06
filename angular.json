@@ -52,7 +52,6 @@
                   "maximumError": "4kb"
                 }
               ],
-              "baseHref": "/map/",
               "outputHashing": "all"
             },
             "development": {
