@@ -38,7 +38,8 @@
       let-rowIndex="rowIndex"
       let-row="row"
       ngx-datatable-cell-template>
-      {{ row.ownership?.owners?.join(', ') }}
+      <span *ngIf="row.ownership?.owners?.length">{{ row.ownership?.owners?.join(', ') }}</span>
+      <span *ngIf="!row.ownership?.owners?.length">-</span>
     </ng-template>
   </ngx-datatable-column>
 

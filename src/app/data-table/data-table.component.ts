@@ -9,6 +9,8 @@ import { values } from 'lodash';
 import { HttpService } from '../http.service';
 import { FormControl } from '@angular/forms';
 import { debounceTime, distinctUntilChanged } from 'rxjs/operators';
+import { EgridDialogComponent } from '../egrid-dialog/egrid-dialog.component';
+import { MatDialog } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-data-table',
@@ -38,7 +40,8 @@ export class DataTableComponent {
 
   isFiltering = false;
 
-  constructor(private httpService: HttpService) {
+  constructor(private httpService: HttpService,     private dialog: MatDialog
+    ) {
     this.httpService.getData().subscribe(data => {
       // cache our list
       this.temp = values(data);
@@ -69,7 +72,15 @@ export class DataTableComponent {
     this.table.offset = 0;
   }
 
-  onRowClicked(event: Event) {
-    console.log(event);
+  onRowClicked(event: any) {
+    const element = event?.selected[0]
+    if (element) {
+      this.dialog.open(EgridDialogComponent, {
+        data: element,
+        width: '95vw',
+        maxWidth: '100vw',
+      });
+    }
+    
   }
 }

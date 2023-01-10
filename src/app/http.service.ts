@@ -25,6 +25,6 @@ export class HttpService {
   }
 
   getBaseUrl(): string {
-    return '/assets/';
+    return '/assets';
   }
 }

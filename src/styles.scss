@@ -69,3 +69,7 @@ mat-toolbar {
     text-decoration: none !important;
   }
 }
+
+.ngx-datatable.material.single-selection .datatable-body-row.active, .ngx-datatable.material.single-selection .datatable-body-row.active .datatable-row-group {
+  background-color: unset !important;
+}
