@@ -40,8 +40,7 @@ export class DataTableComponent {
 
   isFiltering = false;
 
-  constructor(private httpService: HttpService,     private dialog: MatDialog
-    ) {
+  constructor(private httpService: HttpService, private dialog: MatDialog) {
     this.httpService.getData().subscribe(data => {
       // cache our list
       this.temp = values(data);
@@ -73,7 +72,7 @@ export class DataTableComponent {
   }
 
   onRowClicked(event: any) {
-    const element = event?.selected[0]
+    const element = event?.selected[0];
     if (element) {
       this.dialog.open(EgridDialogComponent, {
         data: element,
@@ -81,6 +80,5 @@ export class DataTableComponent {
         maxWidth: '100vw',
       });
     }
-    
   }
 }

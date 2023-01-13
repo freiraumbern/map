@@ -1,5 +1,10 @@
 import { Injectable } from '@angular/core';
-import { ByOwnerDataAggregation, DataResponse, Squat } from './model/api';
+import {
+  ByOwnerDataAggregation,
+  DataResponse,
+  Femicide,
+  Squat,
+} from './model/api';
 import { HttpClient } from '@angular/common/http';
 
 @Injectable({
@@ -22,6 +27,10 @@ export class HttpService {
 
   getSquats() {
     return this.http.get<Squat[]>(this.getBaseUrl() + '/squats.json');
+  }
+
+  getFemicides() {
+    return this.http.get<Femicide[]>(this.getBaseUrl() + '/femicide_bern.json');
   }
 
   getBaseUrl(): string {

@@ -44,3 +44,10 @@ export interface Squat {
   long: string;
   notes: string;
 }
+
+export interface Femicide {
+  date: string;
+  lat: string;
+  long: string;
+  notes: string;
+}

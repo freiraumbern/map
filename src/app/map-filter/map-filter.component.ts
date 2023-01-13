@@ -40,6 +40,7 @@ export class MapFilterComponent implements AfterViewInit, OnChanges {
   selectedTexts: string[] = [];
   @Output() selectedByOwner = new EventEmitter<ByOwnerDataAggregation[]>();
   @Output() showSquats = new EventEmitter<boolean>();
+  @Output() showFemicides = new EventEmitter<boolean>();
 
   constructor(private cd: ChangeDetectorRef, readonly sd: ScrollDispatcher) {}
 
@@ -133,5 +134,9 @@ export class MapFilterComponent implements AfterViewInit, OnChanges {
 
   toggleSquats(event: MatCheckboxChange) {
     this.showSquats.emit(event.checked);
+  }
+
+  toggleFemicides(event: MatCheckboxChange) {
+    this.showFemicides.emit(event.checked);
   }
 }
