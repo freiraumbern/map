@@ -1,3 +1,7 @@
 .mat-mdc-button:not(:disabled) {
   color: white;
 }
+
+app-welcome {
+  z-index: 999999;
+}

@@ -34,6 +34,7 @@ import { NgHttpCachingModule } from 'ng-http-caching';
 import { APP_BASE_HREF, PlatformLocation } from '@angular/common';
 import { SquatDialogComponent } from './squat-dialog/squat-dialog.component';
 import { MatCheckboxModule } from '@angular/material/checkbox';
+import { WelcomeComponent } from './welcome/welcome.component';
 
 @NgModule({
   declarations: [
@@ -45,6 +46,7 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
     EgridDialogComponent,
     DataTableComponent,
     SquatDialogComponent,
+    WelcomeComponent,
   ],
   imports: [
     BrowserModule,
