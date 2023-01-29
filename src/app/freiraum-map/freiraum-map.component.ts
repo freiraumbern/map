@@ -144,7 +144,7 @@ export class FreiraumMapComponent implements OnDestroy, OnInit {
       markers.push(
         marker([parseFloat(squat.lat), parseFloat(squat.long)], {
           icon: this.getSquatIcon(),
-          title: squat.address + ', ' + squat.date,
+          title: squat.title + ', ' + squat.date,
         }).on('click', () => {
           this.zone.run(() => {
             this.dialog.open(SquatDialogComponent, {

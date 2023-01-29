@@ -37,12 +37,13 @@ export interface ByOwnerDataAggregation {
 export interface Squat {
   street: string;
   plz: string;
-  address: string;
-  coordinates: string;
   date: string;
   lat: string;
   long: string;
   notes: string;
+  title: string;
+  img: string;
+  category: string;
 }
 
 export interface Femicide {

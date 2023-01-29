@@ -1,7 +1,7 @@
-<h1 mat-dialog-title>{{ data.address }}</h1>
+<h1 mat-dialog-title>{{ data.title }}</h1>
 <div mat-dialog-content>
   <mat-list>
-    <div mat-subheader>Infos</div>
+    <div mat-subheader>Info</div>
 
     <mat-list-item>
       <mat-icon matListItemIcon>schedule</mat-icon>
@@ -15,11 +15,13 @@
 
     <mat-list-item>
       <mat-icon matListItemIcon>house</mat-icon>
-      <div matListItemTitle>{{ data.address }}</div>
+      <div matListItemTitle>{{ data.street }}, {{ data.plz }}</div>
     </mat-list-item>
   </mat-list>
 
-  <iframe [src]="getGoogleMapUrl(data.coordinates)" frameborder="0" style="border:0" allowfullscreen></iframe>
+  <img *ngIf="data.img" src="{{ data.img }}">
+
+  <iframe [src]="getGoogleMapUrl(data.lat + ',' + data.long)" frameborder="0" style="border:0" allowfullscreen></iframe>
 
   <div mat-dialog-actions>
     <button mat-flat-button color="primary" mat-dialog-close>Schliessen</button>

@@ -42,10 +42,9 @@ export class AppComponent implements AfterViewInit {
       if (!v && !this.welcomed) {
         this.dialog.open(WelcomeComponent, {
           width: '100vw',
-          height: '50vh',
+          //height: '80vh',
         });
         this.welcomed = true;
-        console.log('No HTTP requests pending anymore (from ngAfterViewInit)');
       }
     });
   }
