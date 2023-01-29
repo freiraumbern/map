@@ -1,602 +1,684 @@
 [
   {
+    "title": "'Fang den Fisch' Besetzt Luxushotel Regina Grand-Hotel",
+    "street": "Zentrum",
+    "plz": 3823,
+    "date": "19.12.2022",
+    "lat": "46.604792664776426",
+    "long": "7.923202047785202",
+    "notes": "https://www.20min.ch/story/kollektiv-besetzt-ehemaliges-luxushotel-in-grindelwald-305730904691",
+    "img": "https://cdn.unitycms.io/images/B3iFiO9N4_8BzYNuVMLEX9.jpg",
+    "category": "Besetzung"
+  },
+  {
     "street": "Steigerhubelstrasse 120",
     "plz": 3008,
-    "address": "Steigerhubelstrasse 120, 3008",
-    "coordinates": "46.94558965953735, 7.411908595406224",
-    "date": "02.10.12",
-    "lat": "46.94558965953735",
-    "long": "7.411908595406224",
-    "notes": "https://www.bernerzeitung.ch/region/bern/hausbesetzer-an-der-steigerhubelstrasse/story/17680124"
-  },
-  {
-    "street": "Güterstrasse 8",
-    "plz": 3008,
-    "address": "Güterstrasse 8, 3008",
-    "coordinates": "46.94823026781637, 7.415595083070265",
-    "date": 2013,
-    "lat": "46.94823026781637",
-    "long": "7.415595083070265",
-    "notes": "Open Doors"
-  },
-  {
-    "street": "Lorrainestrasse 45",
-    "plz": 3014,
-    "address": "Lorrainestrasse 45, 3014",
-    "coordinates": "46.95986465907175, 7.443935108820101",
-    "date": "29.11.11",
-    "lat": "46.95986465907175",
-    "long": "7.443935108820101",
-    "notes": "https://www.bernerzeitung.ch/region/bern/stadt-wirft-hausbesetzer-raus/story/14539101"
-  },
-  {
-    "street": "Landorfstrasse 51A",
-    "plz": 3098,
-    "address": "Landorfstrasse 51A, 3098",
-    "coordinates": "46.920923633535445, 7.408550543538752",
-    "date": "Dez. 2020",
-    "lat": "46.920923633535445",
-    "long": "7.408550543538752",
-    "notes": "coordinates"
-  },
-  {
-    "street": "Weissensteinstrasse 4",
-    "plz": 3008,
-    "address": "Weissensteinstrasse 4, 3008",
-    "coordinates": "46.94186185406487, 7.4136133184865685",
-    "date": "Dez. 2020",
-    "lat": "46.94186185406487",
-    "long": "7.4136133184865685",
-    "notes": "coordinates"
-  },
-  {
-    "street": "Moserstrasse 33",
-    "plz": 3014,
-    "address": "Moserstrasse 33, 3014",
-    "coordinates": "46.95788963088613, 7.453472545711507",
-    "date": "Dez. 2010",
-    "lat": "46.95788963088613",
-    "long": "7.453472545711507",
-    "notes": "coordinates"
-  },
-  {
-    "street": "Wasserwerkgasse 17",
-    "plz": 3011,
-    "address": "Wasserwerkgasse 17, 3011",
-    "coordinates": "46.94632677675373, 7.4561331521428675",
-    "date": "15.03.21",
-    "lat": "46.94632677675373",
-    "long": "7.4561331521428675",
-    "notes": "https://bernaktiv.ch/2021/03/15/hausbesetzung-raeumung-wasserwerkgasse/"
-  },
-  {
-    "street": "Bitziusstrasse 13",
-    "plz": 3006,
-    "address": "Bitziusstrasse 13, 3006",
-    "coordinates": "46.95139996007632, 7.465478939101839",
-    "date": "11.10.19",
-    "lat": "46.95139996007632",
-    "long": "7.465478939101839",
-    "notes": "https://bernaktiv.ch/2019/10/11/hausbesetzung-raeumung-bitziusstrasse/"
-  },
-  {
-    "street": "Thunstrasse 104",
-    "plz": 3006,
-    "address": "Thunstrasse 104, 3006",
-    "coordinates": "46.94101860926277, 7.463471891085744",
-    "date": "27.09.19",
-    "lat": "46.94101860926277",
-    "long": "7.463471891085744",
-    "notes": "https://bernaktiv.ch/2019/09/27/besetzung-punto-areal/"
-  },
-  {
-    "street": "Uferweg 42C",
-    "plz": 3013,
-    "address": "Uferweg 42C, 3013",
-    "coordinates": "46.953690822489726, 7.442936165217425",
-    "date": "03.07.19",
-    "lat": "46.953690822489726",
-    "long": "7.442936165217425",
-    "notes": "https://bernaktiv.ch/2019/07/03/besetzung-verdraengung-bauwagen-uferweg/"
-  },
-  {
-    "street": "Brunnmattstrasse 46A",
-    "plz": 3007,
-    "address": "Brunnmattstrasse 46A, 3007",
-    "coordinates": "46.94331410149756, 7.425514429306278",
-    "date": "08.06.19",
-    "lat": "46.94331410149756",
-    "long": "7.425514429306278",
-    "notes": "https://bernaktiv.ch/2019/06/08/hausbesetzung-brunnmattstrasse/"
-  },
-  {
-    "street": "Viererfeld",
-    "plz": 3012,
-    "address": "Viererfeld, 3012",
-    "coordinates": "46.96340931374457, 7.437353327530796",
-    "date": "07.11.18",
-    "lat": "46.96340931374457",
-    "long": "7.437353327530796",
-    "notes": "https://bernaktiv.ch/2018/11/07/besetzung-viererfeld/"
-  },
-  {
-    "street": "Klaraweg 6",
-    "plz": 3006,
-    "address": "Klaraweg 6, 3006",
-    "coordinates": "46.94652252996773, 7.461868370628914",
-    "date": "19.09.18",
-    "lat": "46.94652252996773",
-    "long": "7.461868370628914",
-    "notes": "https://bernaktiv.ch/2018/09/19/hausbesetzung-raeumung-klaraweg/"
+    "date": "02.10.2012",
+    "lat": "46.94531582626862",
+    "long": "7.412012539300687",
+    "notes": "https://www.derbund.ch/hausbesetzung-nach-rausschmiss-607420928337",
+    "img": "https://cdn.unitycms.io/images/9AKJjhrYqChANYsnHd0oIA.jpg",
+    "title": "Steigi",
+    "category": "Besetzung"
   },
   {
     "street": "Bahnstrasse 69",
     "plz": 3008,
-    "address": "Bahnstrasse 69, 3008",
-    "coordinates": "46.94601656031723, 7.409793702749861",
-    "date": "19.01.18",
-    "lat": "46.94601656031723",
-    "long": "7.409793702749861",
-    "notes": "https://bernaktiv.ch/2018/01/19/hausbesetzung-bahnstrasse-steigi69/"
+    "date": "19.01.2019",
+    "lat": "46.946023098127114",
+    "long": "7.409805401321352",
+    "notes": "https://barrikade.info/article/770",
+    "img": "https://publish.barrikade.info/IMG/arton793.jpg?1518284903",
+    "title": "Steigi 69",
+    "category": "Besetzung"
+  },
+  {
+    "street": "Güterstrasse 8",
+    "plz": 3008,
+    "date": "2013",
+    "lat": "46.94823026781637",
+    "long": "7.415595083070265",
+    "notes": "Open Doors",
+    "img": "",
+    "title": "Güterstrasse 8",
+    "category": "Besetzung"
+  },
+  {
+    "street": "Lorrainestrasse 45",
+    "plz": 3014,
+    "date": "29.11.11",
+    "lat": "46.95986465907175",
+    "long": "7.443935108820101",
+    "notes": "https://www.bernerzeitung.ch/region/bern/stadt-wirft-hausbesetzer-raus/story/14539101",
+    "img": "https://cdn.unitycms.io/images/0Lms5EQb4oLBHNfwocsbcY.jpg",
+    "title": "Güterstrasse 8",
+    "category": "Besetzung"
+  },
+  {
+    "street": "Landorfstrasse 51A",
+    "plz": 3098,
+    "date": "Dez. 2020",
+    "lat": "46.920923633535445",
+    "long": "7.408550543538752",
+    "notes": "https://www.bernerzeitung.ch/auf-besuch-im-besetzten-bern-306526210643",
+    "img": "https://cdn.unitycms.io/images/5Vc_PPrqKT-A2eRWl22tMk.jpg?op=ocroped&val=2001,2000,1000,1000,0,0&sum=jbKCUN7s3N0",
+    "title": "Kollektiv Susuwatari",
+    "category": "Besetzung"
+  },
+  {
+    "street": "Weissensteinstrasse 4",
+    "plz": 3008,
+    "date": "03.01.2021",
+    "lat": "46.94186185406487",
+    "long": "7.4136133184865685",
+    "notes": "https://journal-b.ch/artikel/die-besetzerinnen-in-ausserholligen-wollen-neue-wege-gehen/",
+    "title": "Tripity",
+    "category": "Besetzung",
+    "img": "https://cdn.unitycms.io/images/F5V3pwutKi49ukw7KyfbIx.jpg"
+  },
+  {
+    "street": "Moserstrasse 33",
+    "plz": 3014,
+    "date": "Dez. 2010",
+    "lat": "46.95788963088613",
+    "long": "7.453472545711507",
+    "notes": "https://www.derbund.ch/haus-neben-breitsch-migros-besetzt-523315647865",
+    "img": "https://cdn.unitycms.io/images/4uQv4N4Q4N0BFesa0alwwO.jpg",
+    "title": "Kollektiv Moserstrasse",
+    "category": "Besetzung"
+  },
+  {
+    "street": "Wasserwerkgasse 17",
+    "plz": 3011,
+    "date": "15.03.21",
+    "lat": "46.94632677675373",
+    "long": "7.4561331521428675",
+    "notes": "https://bernaktiv.ch/2021/03/15/hausbesetzung-raeumung-wasserwerkgasse/",
+    "img": "https://cdn.unitycms.io/images/Aqwk2UdsaWx9C3YtvuOQQX.jpg",
+    "title": "Wasserwerkgasse 17 - Kollektiv Zapzarap",
+    "category": "Besetzung"
+  },
+  {
+    "street": "Bitziusstrasse 13",
+    "plz": 3006,
+    "date": "11.10.19",
+    "lat": "46.95139996007632",
+    "long": "7.465478939101839",
+    "notes": "https://bernaktiv.ch/2019/10/11/hausbesetzung-raeumung-bitziusstrasse/",
+    "img": "https://cdn.unitycms.io/images/4pzi76i2aGY9x9BWn7G3aT.jpg",
+    "title": "Rosa Bonheur",
+    "category": "Besetzung"
+  },
+  {
+    "street": "Thunstrasse 104",
+    "plz": 3006,
+    "date": "27.09.19",
+    "lat": "46.94101860926277",
+    "long": "7.463471891085744",
+    "notes": "https://bernaktiv.ch/2019/09/27/besetzung-punto-areal/",
+    "img": "https://cdn.unitycms.io/images/4pzi76i2aGY9x9BWn7G3aT.jpg",
+    "title": "Rosa Bonheur",
+    "category": "Besetzung"
+  },
+  {
+    "street": "Uferweg 42C",
+    "plz": 3013,
+    "date": "03.07.19",
+    "lat": "46.953690822489726",
+    "long": "7.442936165217425",
+    "notes": "https://bernaktiv.ch/2019/07/03/besetzung-verdraengung-bauwagen-uferweg/",
+    "img": "https://bernaktiv.ch/wp-content/uploads/2019/08/66151582_2351549995062267_4654842463997919232_n.jpg",
+    "title": "Kleiner Platz an der Aare",
+    "category": "PLatzbesetzung"
+  },
+  {
+    "street": "Brunnmattstrasse 46A",
+    "plz": 3007,
+    "date": "08.06.19",
+    "lat": "46.94331410149756",
+    "long": "7.425514429306278",
+    "notes": "https://bernaktiv.ch/2019/06/08/hausbesetzung-brunnmattstrasse/",
+    "img": "https://publish.barrikade.info/IMG/arton2347.jpg?1559979847",
+    "title": "Brunnmattstrasse 46a",
+    "category": "Besetzung"
+  },
+  {
+    "street": "Viererfeld",
+    "plz": 3012,
+    "date": "07.11.18",
+    "lat": "46.96340931374457",
+    "long": "7.437353327530796",
+    "notes": "https://bernaktiv.ch/2018/11/07/besetzung-viererfeld/",
+    "img": "https://www.quartieroase-bern.ch/fileadmin/user_upload/Logo_WagenplatzKollektiv.jpg",
+    "title": "Viererfeld",
+    "category": "PLatzbesetzung"
+  },
+  {
+    "street": "Klaraweg 6",
+    "plz": 3006,
+    "date": "19.09.18",
+    "lat": "46.94652252996773",
+    "long": "7.461868370628914",
+    "notes": "https://bernaktiv.ch/2018/09/19/hausbesetzung-raeumung-klaraweg/",
+    "img": "https://publish.barrikade.info/IMG/arton1431.png?1537417973",
+    "title": "Klaraweg 6",
+    "category": "Besetzung"
   },
   {
     "street": "Könizstrasse 276",
     "plz": 3097,
-    "address": "Könizstrasse 276, 3097",
-    "coordinates": "46.92744828851722, 7.4163423882542485",
     "date": "04.01.18",
     "lat": "46.92744828851722",
     "long": "7.4163423882542485",
-    "notes": "https://bernaktiv.ch/2018/01/04/hausbesetzung-koenizstrasse/"
+    "notes": "https://bernaktiv.ch/2018/01/04/hausbesetzung-koenizstrasse/",
+    "img": "https://cdn.unitycms.io/images/9gDVgnfCaYMBXjE3HzY0PT.jpg",
+    "title": "Pizzeria Anarkia",
+    "category": "Besetzung"
   },
   {
     "street": "Bernstrasse 3",
     "plz": 3018,
-    "address": "Bernstrasse 3, 3018",
-    "coordinates": "46.941696442634054, 7.401493727317789",
     "date": "29.11.17",
     "lat": "46.941696442634054",
     "long": "7.401493727317789",
-    "notes": "https://bernaktiv.ch/2017/11/29/hausbesetzung-bernstrasse-barbaletta-co/"
+    "notes": "https://bernaktiv.ch/2017/11/29/hausbesetzung-bernstrasse-barbaletta-co/",
+    "img": "https://bernaktiv.ch/wp-content/uploads/2017/11/24174186_1964883927062211_364567595071472408_n.jpg",
+    "title": "Kollektiv Barbaletta & Co.",
+    "category": "Besetzung"
   },
   {
     "street": "Könizstrasse 13",
     "plz": 3008,
-    "address": "Könizstrasse 13, 3008",
-    "coordinates": "46.94384181477366, 7.4210549770662",
     "date": "06.11.17",
     "lat": "46.94384181477366",
     "long": "7.4210549770662",
-    "notes": "https://bernaktiv.ch/2017/11/06/hausbesetzung-koenizstrasse-symbiose/"
+    "notes": "https://bernaktiv.ch/2017/11/06/hausbesetzung-koenizstrasse-symbiose/",
+    "img": "https://bernaktiv.ch/wp-content/uploads/2018/07/arton522-59e83-2047a.jpg",
+    "title": "SYMBIOSE ",
+    "category": "Besetzung"
   },
   {
     "street": "Freiestrasse 54",
     "plz": 3012,
-    "address": "Freiestrasse 54, 3012",
-    "coordinates": "46.95445097346959, 7.425858146551081",
     "date": "01.07.17",
     "lat": "46.95445097346959",
     "long": "7.425858146551081",
-    "notes": "https://bernaktiv.ch/2017/07/01/polizei-beendet-hausbesetzung-freiestrasse/"
+    "notes": "https://bernaktiv.ch/2017/07/01/polizei-beendet-hausbesetzung-freiestrasse/",
+    "img": "https://cdn.unitycms.io/images/7VJxcSN04PF9Qlhvvxscx0.jpg",
+    "title": "Freiestrasse 54",
+    "category": "Besetzung"
   },
   {
     "street": "Wildparkstrasse",
     "plz": 3012,
-    "address": "Wildparkstrasse, 3012",
-    "coordinates": "46.95876618572474, 7.439377761602613",
     "date": "10.05.17",
     "lat": "46.95876618572474",
     "long": "7.439377761602613",
-    "notes": "https://bernaktiv.ch/2017/05/10/besetzung-wildparkstrasse/"
+    "notes": "https://bernaktiv.ch/2017/05/10/besetzung-wildparkstrasse/",
+    "img": "https://bernaktiv.ch/wp-content/uploads/2018/01/dsc_0008-3c673.jpg",
+    "title": "Conserverie",
+    "category": "Besetzung"
   },
   {
     "street": "Tillierstrasse 25",
     "plz": 3005,
-    "address": "Tillierstrasse 25, 3005",
-    "coordinates": "46.938012423473666, 7.446420491066235",
     "date": "17.04.17",
     "lat": "46.938012423473666",
     "long": "7.446420491066235",
-    "notes": "https://bernaktiv.ch/2017/04/17/hausbesetzung-auszug-tillierstrasse/"
+    "notes": "https://bernaktiv.ch/2017/04/17/hausbesetzung-auszug-tillierstrasse/",
+    "img": "https://cdn.unitycms.io/images/7MBm6S8uqxdBYnRLyfTT6m.jpg?op=ocroped&val=1200,1200,1000,1000,0,0&sum=wyTvVNtX630",
+    "title": "Kollektiv Shangri-La",
+    "category": "Besetzung"
   },
   {
     "street": "Fabrikstrasse 16",
     "plz": 3012,
-    "address": "Fabrikstrasse 16, 3012",
-    "coordinates": "46.95381525075491, 7.423951255565071",
     "date": "19.02.17",
     "lat": "46.95381525075491",
     "long": "7.423951255565071",
-    "notes": "https://bernaktiv.ch/2017/02/19/hausbesetzung-fabrikstrasse-fabrikool/"
+    "notes": "https://bernaktiv.ch/2017/02/19/hausbesetzung-fabrikstrasse-fabrikool/",
+    "img": "https://publish.barrikade.info/IMG/arton64.jpg?1488626586",
+    "title": "Fabrikool",
+    "category": "Besetzung"
   },
   {
     "street": "Marienstrasse 17",
     "plz": 3005,
-    "address": "Marienstrasse 17, 3005",
-    "coordinates": "46.94398053498458, 7.452167337981666",
     "date": "01.01.17",
     "lat": "46.94398053498458",
     "long": "7.452167337981666",
-    "notes": "https://bernaktiv.ch/2017/01/01/hausbesetzung-marienstrasse-kirchenfeld/"
+    "notes": "https://bernaktiv.ch/2017/01/01/hausbesetzung-marienstrasse-kirchenfeld/",
+    "img": "https://cdn.unitycms.io/images/6pjlkPczKoZBH_lcOW5Lk8.jpg",
+    "title": "Familie Ohana",
+    "category": "Besetzung"
   },
   {
     "street": "Effingerstrasse 29",
     "plz": 3008,
-    "address": "Effingerstrasse 29, 3008",
-    "coordinates": "46.94573576607795, 7.432855343298257",
     "date": "05.12.16",
     "lat": "46.94573576607795",
     "long": "7.432855343298257",
-    "notes": "https://bernaktiv.ch/2016/12/05/hausbesetzung-effingerstrasse-effy29/"
+    "notes": "https://bernaktiv.ch/2016/12/05/hausbesetzung-effingerstrasse-effy29/",
+    "img": "https://rabe.ch/wp-content/uploads/2021/06/effy.jpg",
+    "title": "Effy29",
+    "category": "Besetzung"
   },
   {
     "street": "Thunstrasse 116",
     "plz": 3006,
-    "address": "Thunstrasse 116, 3006",
-    "coordinates": "46.941379013104154, 7.465854390783841",
     "date": "30.11.16",
     "lat": "46.941379013104154",
     "long": "7.465854390783841",
-    "notes": "https://bernaktiv.ch/2016/11/30/hausbesetzung-burgernziel/"
+    "notes": "https://bernaktiv.ch/2016/11/30/hausbesetzung-burgernziel/",
+    "img": "https://cdn.unitycms.io/images/AytnheMQaj0AhvhCYZ83ZQ.jpg",
+    "title": "«Herr Apfel», «Frau Birne» und «Herr Nuss»",
+    "category": "Besetzung"
   },
   {
     "street": "Effingerstrasse 58",
     "plz": 3008,
-    "address": "Effingerstrasse 58, 3008",
-    "coordinates": "46.946157978301954, 7.4296542702718815",
     "date": "10.07.16",
     "lat": "46.946157978301954",
     "long": "7.4296542702718815",
-    "notes": "https://bernaktiv.ch/2016/07/10/hausbesetzung-effingerstrasse-cassiopeia/"
+    "notes": "https://bernaktiv.ch/2016/07/10/hausbesetzung-effingerstrasse-cassiopeia/",
+    "img": "https://cdn.unitycms.io/images/Ds3U2TDjaikByT-HsMkeuc.jpg",
+    "title": "Cassiopeia",
+    "category": "Besetzung"
   },
   {
     "street": "Rodtmattstrasse 115",
     "plz": 3014,
-    "address": "Rodtmattstrasse 115, 3014",
-    "coordinates": "46.95891077617714, 7.455731257288928",
     "date": "14.03.16",
     "lat": "46.95891077617714",
     "long": "7.455731257288928",
-    "notes": "https://bernaktiv.ch/2016/03/14/hausbsetzung-rodtmattstrasse/"
+    "notes": "https://bernaktiv.ch/2016/03/14/hausbsetzung-rodtmattstrasse/",
+    "img": "https://cdn.unitycms.io/images/53som1cN49z8OVIzfCt2Ue.jpg",
+    "title": "Kollektiv Kinderlein vom Breitenrain",
+    "category": "Besetzung"
   },
   {
     "street": "Freiburgstrasse 131",
     "plz": 3008,
-    "address": "Freiburgstrasse 131, 3008",
-    "coordinates": "46.94348533483086, 7.408701961957169",
     "date": "10.03.16",
     "lat": "46.94348533483086",
     "long": "7.408701961957169",
-    "notes": "https://bernaktiv.ch/2016/03/10/hausbesetzung-freiburgstrasse/"
+    "notes": "https://bernaktiv.ch/2016/03/10/hausbesetzung-freiburgstrasse/",
+    "img": "https://lh3.googleusercontent.com/p/AF1QipOwOny0nyHh4RIRb-6AWoNsOVdXVyLewor2afKL=s680-w680-h510",
+    "title": "Café Toujours",
+    "category": "Besetzung"
   },
   {
     "street": "Waldheimstrasse 49",
     "plz": 3012,
-    "address": "Waldheimstrasse 49, 3012",
-    "coordinates": "46.95468181367758, 7.427407660289812",
     "date": "19.02.16",
     "lat": "46.95468181367758",
     "long": "7.427407660289812",
-    "notes": "https://bernaktiv.ch/2016/02/19/flti-hausbesetzung-waldheimstrasse/"
+    "notes": "https://bernaktiv.ch/2016/02/19/flti-hausbesetzung-waldheimstrasse/",
+    "img": "https://cdn.unitycms.io/images/Aao6mKl1KAz8BS5kiZJ4D7.jpg",
+    "title": "Ronja",
+    "category": "Besetzung"
   },
   {
     "street": "Thunstrasse 26",
     "plz": 3074,
-    "address": "Thunstrasse 26, 3074",
-    "coordinates": "46.93498628803976, 7.4805844722896335",
     "date": "27.12.15",
     "lat": "46.93498628803976",
     "long": "7.4805844722896335",
-    "notes": "https://bernaktiv.ch/2015/12/27/hausbesetzung-thunstrasse-muri/"
+    "notes": "https://bernaktiv.ch/2015/12/27/hausbesetzung-thunstrasse-muri/",
+    "img": "https://cdn.unitycms.io/images/0uOp0ePUaZC8qiYVpheQCs.jpg",
+    "title": "Thunstrasse 26",
+    "category": "Besetzung"
   },
   {
     "street": "Morillonstrasse 75",
     "plz": 3007,
-    "address": "Morillonstrasse 75, 3007",
-    "coordinates": "46.93226633079325, 7.433864450663311",
     "date": "12.12.15",
     "lat": "46.93226633079325",
     "long": "7.433864450663311",
-    "notes": "https://bernaktiv.ch/2015/12/12/besetzung-bundeszentrum-zieglerspital/"
+    "notes": "https://bernaktiv.ch/2015/12/12/besetzung-bundeszentrum-zieglerspital/",
+    "img": "https://bernaktiv.ch/wp-content/uploads/2017/05/96359.jpg",
+    "title": "Zieglerspital",
+    "category": "Besetzung"
   },
   {
     "street": "Nesslerenweg 44",
     "plz": 3084,
-    "address": "Nesslerenweg 44, 3084",
-    "coordinates": "46.92206671667246, 7.463215097315647",
     "date": "08.05.15",
     "lat": "46.92206671667246",
     "long": "7.463215097315647",
-    "notes": "https://bernaktiv.ch/2015/05/08/hausbesetzung-raeumung-nesslerenweg/"
+    "notes": "https://bernaktiv.ch/2015/05/08/hausbesetzung-raeumung-nesslerenweg/",
+    "img": "",
+    "title": "Wohnkollektiv Sowieso",
+    "category": "Besetzung"
   },
   {
     "street": "Bernstrasse 29",
     "plz": 3072,
-    "address": "Bernstrasse 29, 3072",
-    "coordinates": "46.95616894801378, 7.482595938443057",
     "date": "23.03.15",
     "lat": "46.95616894801378",
     "long": "7.482595938443057",
-    "notes": "https://bernaktiv.ch/2015/03/23/hausbesetzung-bernstrasse-familie-osterhase/"
+    "notes": "https://bernaktiv.ch/2015/03/23/hausbesetzung-bernstrasse-familie-osterhase/",
+    "img": "https://cdn.unitycms.io/images/23z8CgmF41_9Hyhrb2fofN.jpg",
+    "title": "Familie Osterhase",
+    "category": "Besetzung"
   },
   {
     "street": "Hintere Dorfgasse 22",
     "plz": 3073,
-    "address": "Hintere Dorfgasse 22, 3073",
-    "coordinates": "46.934454767124485, 7.514219329933083",
     "date": "02.03.15",
     "lat": "46.934454767124485",
     "long": "7.514219329933083",
-    "notes": "https://bernaktiv.ch/2015/03/02/hausbesetzung-dna-fichierung-dorfgasse/"
+    "notes": "https://bernaktiv.ch/2015/03/02/hausbesetzung-dna-fichierung-dorfgasse/",
+    "img": "",
+    "title": "",
+    "category": "Besetzung"
   },
   {
     "street": "Nesslerenweg 20",
     "plz": 3084,
-    "address": "Nesslerenweg 20, 3084",
-    "coordinates": "46.9236195947483, 7.461024722623204",
     "date": "27.01.15",
     "lat": "46.9236195947483",
     "long": "7.461024722623204",
-    "notes": "https://bernaktiv.ch/2015/01/27/hausbesetzung-nesslerenweg/"
+    "notes": "https://bernaktiv.ch/2015/01/27/hausbesetzung-nesslerenweg/",
+    "img": "https://cdn.unitycms.io/images/Fnb-4PRn43-8fIVk8_f-il.jpg",
+    "title": "Familie Fehr",
+    "category": "Besetzung"
   },
   {
     "street": "Finkenhubelweg 8",
     "plz": 3012,
-    "address": "Finkenhubelweg 8, 3012",
-    "coordinates": "46.94950396317228, 7.4306513034063935",
     "date": "18.02.12 und 18.01.15",
     "lat": "46.94950396317228",
     "long": "7.4306513034063935",
-    "notes": "https://bernaktiv.ch/2012/02/18/hausbesetzung-raeumung-finkenhubelweg/ und https://bernaktiv.ch/2015/01/18/hausbesetzung-raeumung-finkenhubelweg-2/"
+    "notes": "https://bernaktiv.ch/2012/02/18/hausbesetzung-raeumung-finkenhubelweg/ und https://bernaktiv.ch/2015/01/18/hausbesetzung-raeumung-finkenhubelweg-2/",
+    "img": "https://bernaktiv.ch/wp-content/uploads/2017/05/85521.jpg",
+    "title": "Finkenhubelweg 8",
+    "category": "Besetzung"
   },
   {
     "street": "Murtenstrasse 32",
     "plz": 3008,
-    "address": "Murtenstrasse 32, 3008",
-    "coordinates": "46.94933070712303, 7.426124313589083",
     "date": "20.10.14",
     "lat": "46.94933070712303",
     "long": "7.426124313589083",
-    "notes": "https://bernaktiv.ch/2014/10/20/hausbesetzung-murtenstrasse-familie-bo/"
+    "notes": "https://bernaktiv.ch/2014/10/20/hausbesetzung-murtenstrasse-familie-bo/",
+    "img": "https://cdn.unitycms.io/images/DFRqi8N6qxi9pSTZ4SYc-0.jpg",
+    "title": "Familie Bo",
+    "category": "Besetzung"
   },
   {
     "street": "Scheibenstrasse 54",
     "plz": 3014,
-    "address": "Scheibenstrasse 54, 3014",
-    "coordinates": "46.96432706498145, 7.45103220073026",
     "date": "10.03.14",
     "lat": "46.96432706498145",
     "long": "7.45103220073026",
-    "notes": "https://bernaktiv.ch/2014/10/03/hausbesetzung-scheibenstrasse/"
+    "notes": "https://bernaktiv.ch/2014/10/03/hausbesetzung-scheibenstrasse/",
+    "img": "https://cdn.unitycms.io/images/DdtO1sPBaWc8sOL5V9FjHD.jpg",
+    "title": "Locomotiva",
+    "category": "Besetzung"
   },
   {
     "street": "Matzenriedstrasse 94",
     "plz": 3019,
-    "address": "Matzenriedstrasse 94, 3019",
-    "coordinates": "46.93247904877535, 7.342583541089836",
     "date": "19.09.14",
     "lat": "46.93247904877535",
     "long": "7.342583541089836",
-    "notes": "https://bernaktiv.ch/2014/09/19/neubesetzung-wegzug-matzenriedstrasse/"
+    "notes": "https://bernaktiv.ch/2014/09/19/neubesetzung-wegzug-matzenriedstrasse/",
+    "img": "https://cdn.unitycms.io/images/EZtn4NHD4U68jz94TWYdd6.jpg",
+    "title": "Kollektiv Variado",
+    "category": "Besetzung"
   },
   {
     "street": "Murtenstrasse 34A",
     "plz": 3008,
-    "address": "Murtenstrasse 34A, 3008",
-    "coordinates": "46.949471830353545, 7.425816618349986",
     "date": "25.08.14",
     "lat": "46.949471830353545",
     "long": "7.425816618349986",
-    "notes": "https://bernaktiv.ch/2014/08/25/hausbesetzung-murtenstrasse-serafin-und-plum/"
+    "notes": "https://bernaktiv.ch/2014/08/25/hausbesetzung-murtenstrasse-serafin-und-plum/",
+    "img": "https://cdn.unitycms.io/images/1yAFWPK4aRnA_Cqc3U09aa.jpg",
+    "title": "Serafin und Plum",
+    "category": "Besetzung"
   },
   {
     "street": "Lagerweg 12",
     "plz": 3013,
-    "address": "Lagerweg 12, 3013",
-    "coordinates": "46.9567529378705, 7.445442473270114",
     "date": "21.04.13",
     "lat": "46.9567529378705",
     "long": "7.445442473270114",
-    "notes": "https://bernaktiv.ch/2013/04/21/hausbesetzung-lagerweg-denkmal/"
+    "notes": "https://bernaktiv.ch/2013/04/21/hausbesetzung-lagerweg-denkmal/",
+    "img": "https://cdn.unitycms.io/images/5XeYsnn04qcBzNwGrPUFUr.jpg",
+    "title": "denk:mal",
+    "category": "Besetzung"
   },
   {
     "street": "Wylerringstrasse 29",
     "plz": 3014,
-    "address": "Wylerringstrasse 29, 3014",
-    "coordinates": "46.96251373734338, 7.4494403576215165",
     "date": "19.04.13",
     "lat": "46.96251373734338",
     "long": "7.4494403576215165",
-    "notes": "https://bernaktiv.ch/2013/04/19/hausbesetzung-wylerringstrasse/"
+    "notes": "https://bernaktiv.ch/2013/04/19/hausbesetzung-wylerringstrasse/",
+    "img": "https://cdn.unitycms.io/images/37IUjdH44ds9sCHy5BgLqO.jpg",
+    "title": "Die Kinder von Bern",
+    "category": "Besetzung"
   },
   {
     "street": "Gartenstrasse 3",
     "plz": 3007,
-    "address": "Gartenstrasse 3, 3007",
-    "coordinates": "46.945126128514886, 7.429305734790678",
     "date": "06.03.12",
     "lat": "46.945126128514886",
     "long": "7.429305734790678",
-    "notes": "https://bernaktiv.ch/2012/03/06/hausbesetzung-raeumung-gartenstrasse/"
+    "notes": "https://bernaktiv.ch/2012/03/06/hausbesetzung-raeumung-gartenstrasse/",
+    "img": "",
+    "title": "Familie Baumgartner",
+    "category": "Besetzung"
   },
   {
     "street": "Worblentalstrasse 62",
     "plz": 3063,
-    "address": "Worblentalstrasse 62, 3063",
-    "coordinates": "46.97404591633472, 7.478560935557857",
     "date": "10.07.09",
     "lat": "46.97404591633472",
     "long": "7.478560935557857",
-    "notes": "https://bernaktiv.ch/2009/07/10/hausbesetzung-worblentalstrasse-ittigen/"
+    "notes": "https://bernaktiv.ch/2009/07/10/hausbesetzung-worblentalstrasse-ittigen/",
+    "img": "",
+    "title": "Gruppe Wohnprojekt freier Lebensraum h",
+    "category": "Besetzung"
   },
   {
     "street": "Stauffacherstrasse 82",
     "plz": 3014,
-    "address": "Stauffacherstrasse 82, 3014",
-    "coordinates": "46.96735822556103, 7.460027266853631",
     "date": "11.05.07",
     "lat": "46.96735822556103",
     "long": "7.460027266853631",
-    "notes": "https://bernaktiv.ch/2007/05/11/hausbesetzung-stauffacherstrasse-denkmal/"
+    "notes": "https://bernaktiv.ch/2007/05/11/hausbesetzung-stauffacherstrasse-denkmal/",
+    "img": "https://bernaktiv.ch/wp-content/uploads/2007/05/49266.jpg",
+    "title": "denk:mal",
+    "category": "Besetzung"
   },
   {
     "street": "Murtenstrasse 340",
     "plz": 3027,
-    "address": "Murtenstrasse 340, 3027",
-    "coordinates": "46.950185896608104, 7.385543962147393",
     "date": "16.03.07",
     "lat": "46.950185896608104",
     "long": "7.385543962147393",
-    "notes": "https://bernaktiv.ch/2007/03/16/hausbesetzung-murtenstrasse-denkmal/"
+    "notes": "https://bernaktiv.ch/2007/03/16/hausbesetzung-murtenstrasse-denkmal/",
+    "img": "",
+    "title": "denk:mal",
+    "category": "Besetzung"
   },
   {
     "street": "Murtenstrasse 217",
     "plz": 3027,
-    "address": "Murtenstrasse 217, 3027",
-    "coordinates": "46.94915852955097, 7.398894083281934",
     "date": "10.06.06",
     "lat": "46.94915852955097",
     "long": "7.398894083281934",
-    "notes": "https://bernaktiv.ch/2006/10/10/hausbesetzung-murtenstrasse-217/"
+    "notes": "https://bernaktiv.ch/2006/10/10/hausbesetzung-murtenstrasse-217/",
+    "img": "",
+    "title": "Wohnkollektiv schonungsvoll die wohnungvoll",
+    "category": "Besetzung"
   },
   {
     "street": "Stöckackerstrasse 9",
     "plz": 3027,
-    "address": "Stöckackerstrasse 9, 3027",
-    "coordinates": "46.94813996020162, 7.403684034433319",
     "date": "17.08.06",
     "lat": "46.94813996020162",
     "long": "7.403684034433319",
-    "notes": "https://bernaktiv.ch/2006/08/17/stadttauben-ziehen-300m-weiter/"
+    "notes": "https://bernaktiv.ch/2006/08/17/stadttauben-ziehen-300m-weiter/",
+    "img": "",
+    "title": "Stadttauben",
+    "category": "PLatzbesetzung"
   },
   {
     "street": "Murtenstrasse 1",
     "plz": 3008,
-    "address": "Murtenstrasse 1, 3008",
-    "coordinates": "46.94824454828784, 7.427417617248934",
     "date": "11.06.2006",
     "lat": "46.94824454828784",
     "long": "7.427417617248934",
-    "notes": "https://bernaktiv.ch/2006/08/11/wagenppatzbesetzung-murtenstrasse-stadttauben/"
+    "notes": "https://bernaktiv.ch/2006/08/11/wagenppatzbesetzung-murtenstrasse-stadttauben/",
+    "img": "",
+    "title": "Stadttauben",
+    "category": "PLatzbesetzung"
   },
   {
     "street": "Laubeggstrasse 36",
     "plz": 3006,
-    "address": "Laubeggstrasse 36, 3006",
-    "coordinates": "46.95077505258461, 7.4638631199394565",
     "date": "04.04.06",
     "lat": "46.95077505258461",
     "long": "7.4638631199394565",
-    "notes": "https://bernaktiv.ch/2006/04/04/hausbesetzung-laubeggstrasse-denkmal/"
+    "notes": "https://bernaktiv.ch/2006/04/04/hausbesetzung-laubeggstrasse-denkmal/",
+    "img": "https://bernaktiv.ch/wp-content/uploads/2006/04/39929.jpg",
+    "title": "Denk:Mal",
+    "category": "Besetzung"
   },
   {
     "street": "Sandrainstrasse",
     "plz": 3007,
-    "address": "Sandrainstrasse, 3007",
-    "coordinates": "46.938061, 7.442163",
     "date": "25.11.05",
     "lat": "46.938061",
     "long": "7.442163",
-    "notes": "https://bernaktiv.ch/2005/11/25/wagenplatzbesetzung-gaswerkareal/"
+    "notes": "https://bernaktiv.ch/2005/11/25/wagenplatzbesetzung-gaswerkareal/",
+    "img": "https://bernaktiv.ch/wp-content/uploads/2017/04/36636.jpg",
+    "title": "GASWERK",
+    "category": "PLatzbesetzung"
   },
   {
     "street": "Sandrainstrasse",
     "plz": 3007,
-    "address": "Sandrainstrasse, 3007",
-    "coordinates": "46.93768459837900, 7.442256258364090",
     "date": "08.12.05",
     "lat": "46.93768459837900",
     "long": "7.442256258364090",
-    "notes": "https://bernaktiv.ch/2005/12/08/neubesetzung-wagenplatz-gaswerkareal/"
+    "notes": "https://bernaktiv.ch/2005/12/08/neubesetzung-wagenplatz-gaswerkareal/",
+    "img": "https://bernaktiv.ch/wp-content/uploads/2017/04/36636.jpg",
+    "title": "GASWERK",
+    "category": "PLatzbesetzung"
   },
   {
     "street": "Bolligenstrasse 85",
     "plz": 3006,
-    "address": "Bolligenstrasse 85, 3006",
-    "coordinates": "46.962128648584795, 7.476293948563039",
     "date": "08.10.2005",
     "lat": "46.962128648584795",
     "long": "7.476293948563039",
-    "notes": "https://bernaktiv.ch/2005/10/08/eroeffnungsfest-denkmal/"
+    "notes": "https://bernaktiv.ch/2005/10/08/eroeffnungsfest-denkmal/",
+    "img": "https://bernaktiv.ch/wp-content/uploads/2017/04/35414.jpg",
+    "title": "Denk:mal",
+    "category": "Besetzung"
   },
   {
     "street": "Platanenweg 4",
     "plz": 3013,
-    "address": "Platanenweg 4, 3013",
-    "coordinates": "46.95763427798235, 7.444504653854231",
     "date": "20.02.2004",
     "lat": "46.95763427798235",
     "long": "7.444504653854231",
-    "notes": "https://bernaktiv.ch/2004/02/20/hausbesetzung-platanenweg/"
+    "notes": "https://bernaktiv.ch/2004/02/20/hausbesetzung-platanenweg/",
+    "img": "https://bernaktiv.ch/wp-content/uploads/2004/02/19294.jpg",
+    "title": "Platanenweg 4",
+    "category": "Besetzung"
   },
   {
     "street": "Laubeggstrasse 23",
     "plz": 3006,
-    "address": "Laubeggstrasse 23, 3006",
-    "coordinates": "46.95122728165835, 7.462011665696561",
     "date": "31.07.2003",
     "lat": "46.95122728165835",
     "long": "7.462011665696561",
-    "notes": "https://bernaktiv.ch/2003/07/31/hausbesetzung-laubeggstrasse/"
+    "notes": "https://bernaktiv.ch/2003/07/31/hausbesetzung-laubeggstrasse/",
+    "img": "",
+    "title": "Pauline Brennessel-Gestrüpp AG",
+    "category": "Besetzung"
   },
   {
     "street": "Schulhausstrasse 1",
     "plz": 3073,
-    "address": "Schulhausstrasse 1, 3073",
-    "coordinates": "46.93424398373963, 7.506835053788828",
     "date": "02.05.2003",
     "lat": "46.93424398373963",
     "long": "7.506835053788828",
-    "notes": "https://bernaktiv.ch/2003/05/02/hausbesetzung-schulhausstrasse-guemligen/"
+    "notes": "https://bernaktiv.ch/2003/05/02/hausbesetzung-schulhausstrasse-guemligen/",
+    "img": "",
+    "title": "GesetzerInnen Mattenhof",
+    "category": "Besetzung"
   },
   {
     "street": "Fabrikstrasse 12",
     "plz": 3012,
-    "address": "Fabrikstrasse 12, 3012",
-    "coordinates": "46.95297317644921, 7.423341808579247",
     "date": "09.09.2002",
     "lat": "46.95297317644921",
     "long": "7.423341808579247",
-    "notes": "https://bernaktiv.ch/2002/09/09/besetzung-wagenplatz-fabrikstrasse/"
+    "notes": "https://bernaktiv.ch/2002/09/09/besetzung-wagenplatz-fabrikstrasse/",
+    "img": "",
+    "title": "Wohnkollektiv Wagenburg",
+    "category": "PLatzbesetzung"
   },
   {
     "street": "Könizstrasse 133",
     "plz": 3008,
-    "address": "Könizstrasse 133, 3008",
-    "coordinates": "46.936773314429374, 7.416242155653482",
     "date": "09.09.2002",
     "lat": "46.936773314429374",
     "long": "7.416242155653482",
-    "notes": "https://bernaktiv.ch/2002/09/09/besetzung-wagenplatz-fabrikstrasse/"
+    "notes": "https://bernaktiv.ch/2002/09/09/besetzung-wagenplatz-fabrikstrasse/",
+    "img": "",
+    "title": "Wohnkollektiv Wagenburg",
+    "category": "PLatzbesetzung"
   },
   {
     "street": "Burgunderstrasse 99",
     "plz": 3018,
-    "address": "Burgunderstrasse 99, 3018",
-    "coordinates": "46.93843001706862, 7.396364178598667",
     "date": "19.08.2002",
     "lat": "46.93843001706862",
     "long": "7.396364178598667",
-    "notes": "https://bernaktiv.ch/2002/08/19/hausbesetzung-burgunderstrasse/"
+    "notes": "https://bernaktiv.ch/2002/08/19/hausbesetzung-burgunderstrasse/",
+    "img": "",
+    "title": "Burgunderstrasse 99",
+    "category": "Besetzung"
   },
   {
     "street": "Quellenweg 17",
     "plz": 3084,
-    "address": "Quellenweg 17, 3084",
-    "coordinates": "46.926903037636016, 7.45238477223031",
     "date": "28.05.2002",
     "lat": "46.926903037636016",
     "long": "7.45238477223031",
-    "notes": "https://bernaktiv.ch/2002/05/28/hausbesetzung-raeumung-quellenweg-wabern/"
+    "notes": "https://bernaktiv.ch/2002/05/28/hausbesetzung-raeumung-quellenweg-wabern/",
+    "img": "",
+    "title": "Quellenweg Wabern",
+    "category": "Besetzung"
   },
   {
     "street": "Werkstrasse 24",
     "plz": 3084,
-    "address": "Werkstrasse 24, 3084",
-    "coordinates": "46.927113974727945, 7.451091315127256",
     "date": "22.04.2002",
     "lat": "46.927113974727945",
     "long": "7.451091315127256",
-    "notes": "https://bernaktiv.ch/2002/04/22/hausbesetzung-werkstrasse-wabern/"
+    "notes": "https://bernaktiv.ch/2002/04/22/hausbesetzung-werkstrasse-wabern/",
+    "img": "",
+    "title": "okuPAZija",
+    "category": "Besetzung"
+  },
+  {
+    "street": "Wahlackerstrasse 5",
+    "plz": 3052,
+    "date": "04.10.2019",
+    "lat": "46.99335975832009",
+    "long": "7.454656516053772",
+    "notes": "https://journal-b.ch/artikel/besetzung-in-zollikofen-ein-vorlaeufiger-abschluss/",
+    "img": "https://publish.barrikade.info/IMG/png/bildschirmfoto_vom_2019-10-10_06-31-25.png",
+    "title": "Betagtenheim Zollikofen",
+    "category": "Besetzung"
   }
 ]

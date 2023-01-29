@@ -37,7 +37,6 @@ export class FreiraumMapComponent implements OnDestroy, OnInit {
       tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         opacity: 0.7,
         maxZoom: 19,
-        minZoom: 12,
         detectRetina: true,
         attribution: '',
       }),
