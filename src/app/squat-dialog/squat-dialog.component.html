@@ -1,8 +1,6 @@
 <h1 mat-dialog-title>{{ data.title }}</h1>
 <div mat-dialog-content>
   <mat-list>
-    <div mat-subheader>Info</div>
-
     <mat-list-item>
       <mat-icon matListItemIcon>schedule</mat-icon>
       <div matListItemTitle>{{ data.date }}</div>
@@ -18,10 +16,18 @@
       <div matListItemTitle>{{ data.street }}, {{ data.plz }}</div>
     </mat-list-item>
   </mat-list>
-
-  <img *ngIf="data.img" src="{{ data.img }}">
-
-  <iframe [src]="getGoogleMapUrl(data.lat + ',' + data.long)" frameborder="0" style="border:0" allowfullscreen></iframe>
+  <p *ngIf="data.img" class="squat-original-image">
+    <b>Originalbild</b>
+    <img src="{{ data.img }}" />
+  </p>
+  <p class="maps-view">
+    <b>Ansicht Heute</b>
+    <iframe
+      [src]="getGoogleMapUrl(data.lat + ',' + data.long)"
+      frameborder="0"
+      style="border: 0"
+      allowfullscreen></iframe>
+  </p>
 
   <div mat-dialog-actions>
     <button mat-flat-button color="primary" mat-dialog-close>Schliessen</button>

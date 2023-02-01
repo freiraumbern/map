@@ -73,3 +73,7 @@ mat-toolbar {
 .ngx-datatable.material.single-selection .datatable-body-row.active, .ngx-datatable.material.single-selection .datatable-body-row.active .datatable-row-group {
   background-color: unset !important;
 }
+
+.mat-mdc-dialog-title {
+  font-weight: 900 !important;
+}
