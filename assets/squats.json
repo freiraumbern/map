@@ -680,5 +680,16 @@
     "img": "https://publish.barrikade.info/IMG/png/bildschirmfoto_vom_2019-10-10_06-31-25.png",
     "title": "Betagtenheim Zollikofen",
     "category": "Besetzung"
+  },
+  {
+    "street": "Neubrückstrasse 8",
+    "plz": 3012,
+    "date": "04.10.2019",
+    "lat": "46.95286508319261",
+    "long": "7.440604386227701",
+    "notes": "https://www.reitschule.ch/reitschule/?infos",
+    "img": "https://cdn.unitycms.io/images/1mde424xKPT9kIpaD_nJNM.jpg",
+    "title": "Reitschule",
+    "category": "Besetzung"
   }
 ]
