@@ -15,6 +15,7 @@ import {
 import { forkJoin } from 'rxjs';
 import {
   ByOwnerDataAggregation,
+  ColonialLocation,
   DataResponse,
   Femicide,
   Squat,
@@ -25,6 +26,7 @@ import { EgridDialogComponent } from '../egrid-dialog/egrid-dialog.component';
 import { SquatDialogComponent } from '../squat-dialog/squat-dialog.component';
 import { interpolateRainbow } from 'd3-scale-chromatic';
 import { Chance } from 'chance';
+import { ColonialDialogComponent } from '../colonial-dialog/colonial-dialog.component';
 
 @Component({
   selector: 'app-freiraum-map',
@@ -71,6 +73,11 @@ export class FreiraumMapComponent implements OnDestroy, OnInit {
   femicides: Femicide[] = [];
 
   /**
+   * Colonial Locations from bern-kolonial.ch
+   */
+  colonialLocations: ColonialLocation[] = [];
+
+  /**
    * selected entries
    */
   byOwnerSelection: ByOwnerDataAggregation[] = [];
@@ -101,6 +108,16 @@ export class FreiraumMapComponent implements OnDestroy, OnInit {
   showFemicides = true;
 
   /**
+   * colonialLocations data in one layer
+   */
+  colonialLocationsLayerGroup: LayerGroup<Marker> | null = null;
+
+  /**
+   * show the colonialLocations layer on the map
+   */
+  showColonialLocations = true;
+
+  /**
    * base layer
    */
   layers: Layer[] = [];
@@ -125,16 +142,23 @@ export class FreiraumMapComponent implements OnDestroy, OnInit {
   ngOnInit() {
     forkJoin(
       this.httpService.getData(),
-      this.httpService.getDataByOwner(),
-      this.httpService.getSquats(),
-      this.httpService.getFemicides()
-    ).subscribe(([egridData, byOwnerData, squats, femicides]) => {
+      this.httpService.getDataByOwner()
+    ).subscribe(([egridData, byOwnerData]) => {
       this.egridData = egridData;
       this.byOwnerData = byOwnerData;
+    });
+
+    this.httpService.getSquats().subscribe(squats => {
       this.squatsData = squats;
-      this.femicides = femicides;
       this.createSquatLayerGroup();
+    });
+    this.httpService.getFemicides().subscribe(femicides => {
+      this.femicides = femicides;
       this.createFemicideLayerGroup();
+    });
+    this.httpService.getColonialLocations().subscribe(colonialLocations => {
+      this.colonialLocations = colonialLocations;
+      this.createColonialLocationLayerGroup();
     });
   }
 
@@ -178,6 +202,26 @@ export class FreiraumMapComponent implements OnDestroy, OnInit {
       );
     });
     this.femicidesLayerGroup = new LayerGroup(markers);
+  }
+
+  createColonialLocationLayerGroup() {
+    const markers: Marker[] = [];
+    this.colonialLocations.forEach(colonialLocation => {
+      markers.push(
+        marker(colonialLocation.coords as LatLngTuple, {
+          icon: new DivIcon({ html: colonialLocation.hauptbild }),
+          title: colonialLocation.title,
+        }).on('click', () => {
+          this.zone.run(() => {
+            this.dialog.open(ColonialDialogComponent, {
+              data: colonialLocation,
+              //height: '40vh'
+            });
+          });
+        })
+      );
+    });
+    this.colonialLocationsLayerGroup = new LayerGroup(markers);
   }
 
   createOwnerLayerGroups(data: ByOwnerDataAggregation[]) {
@@ -256,6 +300,10 @@ export class FreiraumMapComponent implements OnDestroy, OnInit {
 
   toggleFemicides(show: boolean) {
     this.showFemicides = show;
+  }
+
+  toggleColonialLocations(show: boolean) {
+    this.showColonialLocations = show;
   }
 
   ngOnDestroy() {

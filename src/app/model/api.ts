@@ -52,3 +52,12 @@ export interface Femicide {
   long: string;
   notes: string;
 }
+
+export interface ColonialLocation {
+  slug: string;
+  title: string;
+  subtitle: string;
+  coords: Array<number>;
+  lead: string;
+  hauptbild: string;
+}

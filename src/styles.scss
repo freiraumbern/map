@@ -77,3 +77,16 @@ mat-toolbar {
 .mat-mdc-dialog-title {
   font-weight: 900 !important;
 }
+
+.leaflet-container .leaflet-marker-pane img {
+  max-width: 4rem !important;
+  border: 1.5px black solid;
+
+  &:hover {
+    max-width: 10rem !important;
+  }
+}
+
+.hauptbild {
+  max-width: 15rem !important;
+}

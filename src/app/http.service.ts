@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import {
   ByOwnerDataAggregation,
+  ColonialLocation,
   DataResponse,
   Femicide,
   Squat,
@@ -31,6 +32,12 @@ export class HttpService {
 
   getFemicides() {
     return this.http.get<Femicide[]>(this.getBaseUrl() + '/femicide_bern.json');
+  }
+
+  getColonialLocations() {
+    return this.http.get<ColonialLocation[]>(
+      this.getBaseUrl() + '/bern-kolonial.ch.json'
+    );
   }
 
   getBaseUrl(): string {

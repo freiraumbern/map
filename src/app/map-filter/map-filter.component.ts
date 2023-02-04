@@ -41,6 +41,7 @@ export class MapFilterComponent implements AfterViewInit, OnChanges {
   @Output() selectedByOwner = new EventEmitter<ByOwnerDataAggregation[]>();
   @Output() showSquats = new EventEmitter<boolean>();
   @Output() showFemicides = new EventEmitter<boolean>();
+  @Output() showColonialPlaces = new EventEmitter<boolean>();
 
   constructor(private cd: ChangeDetectorRef, readonly sd: ScrollDispatcher) {}
 
@@ -138,5 +139,8 @@ export class MapFilterComponent implements AfterViewInit, OnChanges {
 
   toggleFemicides(event: MatCheckboxChange) {
     this.showFemicides.emit(event.checked);
+  }
+  toggleColonialPlaces(event: MatCheckboxChange) {
+    this.showColonialPlaces.emit(event.checked);
   }
 }

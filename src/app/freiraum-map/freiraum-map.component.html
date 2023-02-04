@@ -4,6 +4,7 @@
     (selectedByOwner)="onByOwnerSelected($event)"
     (showSquats)="toggleSquats($event)"
     (showFemicides)="toggleFemicides($event)"
+    (showColonialPlaces)="toggleColonialLocations($event)"
 >
   </app-map-filter>
   <div
@@ -18,6 +19,7 @@
     </div>
     <div *ngIf="squatsLayerGroup && showSquats" [leafletLayer]="squatsLayerGroup"></div>
     <div *ngIf="femicidesLayerGroup && showFemicides" [leafletLayer]="femicidesLayerGroup"></div>
+    <div *ngIf="colonialLocationsLayerGroup && showColonialLocations" [leafletLayer]="colonialLocationsLayerGroup"></div>
   </div>
   <app-map-caption-area
     [hidden]="byOwnerSelection.length === 0"

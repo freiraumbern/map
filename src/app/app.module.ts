@@ -35,6 +35,7 @@ import { APP_BASE_HREF, PlatformLocation } from '@angular/common';
 import { SquatDialogComponent } from './squat-dialog/squat-dialog.component';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { WelcomeComponent } from './welcome/welcome.component';
+import { ColonialDialogComponent } from './colonial-dialog/colonial-dialog.component';
 
 @NgModule({
   declarations: [
@@ -47,6 +48,7 @@ import { WelcomeComponent } from './welcome/welcome.component';
     DataTableComponent,
     SquatDialogComponent,
     WelcomeComponent,
+    ColonialDialogComponent,
   ],
   imports: [
     BrowserModule,

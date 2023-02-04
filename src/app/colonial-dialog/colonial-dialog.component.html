@@ -1,0 +1,13 @@
+<h1 mat-dialog-title>{{ data.title }}</h1>
+<div mat-dialog-content>
+  <h3>{{ data.subtitle }}</h3>
+  <p>
+    {{ data.lead }}
+  </p>
+  <p class="colonial-drawing" [innerHTML]="getImage(data.hauptbild)"></p>
+
+  <p>Orignalquelle: <a target="_blank" href="https://bern-kolonial.ch">Cooperaxion - Bern Kolonial</a></p>
+</div>
+<div mat-dialog-actions>
+  <button mat-flat-button color="primary" mat-dialog-close>Schliessen</button>
+</div>
