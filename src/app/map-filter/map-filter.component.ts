@@ -48,8 +48,6 @@ export class MapFilterComponent implements AfterViewInit, OnChanges {
   ngOnChanges(changes: SimpleChanges) {
     if (changes['byOwnerData'].currentValue?.length > 0) {
       this.byOwnerDataFiltered = this.byOwnerData;
-      this.selected = [...this.byOwnerData].splice(0, 3);
-      this.selectedByOwner.emit(this.selected);
       this.displaySelectedTexts();
     }
   }

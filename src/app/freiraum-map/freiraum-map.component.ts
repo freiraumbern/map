@@ -105,7 +105,7 @@ export class FreiraumMapComponent implements OnDestroy, OnInit {
   /**
    * show the femicides layer on the map
    */
-  showFemicides = true;
+  showFemicides = false;
 
   /**
    * colonialLocations data in one layer
@@ -115,7 +115,7 @@ export class FreiraumMapComponent implements OnDestroy, OnInit {
   /**
    * show the colonialLocations layer on the map
    */
-  showColonialLocations = true;
+  showColonialLocations = false;
 
   /**
    * base layer
