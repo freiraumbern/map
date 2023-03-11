@@ -36,6 +36,9 @@ import { SquatDialogComponent } from './squat-dialog/squat-dialog.component';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { ColonialDialogComponent } from './colonial-dialog/colonial-dialog.component';
+import { CalculatorComponent } from './calculator/calculator.component';
+import { MatStepperModule } from '@angular/material/stepper';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -49,6 +52,7 @@ import { ColonialDialogComponent } from './colonial-dialog/colonial-dialog.compo
     SquatDialogComponent,
     WelcomeComponent,
     ColonialDialogComponent,
+    CalculatorComponent,
   ],
   imports: [
     BrowserModule,
@@ -76,6 +80,9 @@ import { ColonialDialogComponent } from './colonial-dialog/colonial-dialog.compo
     MatInputModule,
     NgHttpCachingModule,
     MatCheckboxModule,
+    MatStepperModule,
+    MatInputModule,
+    FormsModule,
   ],
   providers: [
     HttpService,

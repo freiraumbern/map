@@ -1,0 +1,62 @@
+<p class="intro">
+    Mit dem Mietrechener kannst du deine Miete mit dem durchschnittlichen Mietpreis in deinem Quartier vergleichen.
+</p>
+<mat-vertical-stepper [linear]="true" #stepper>
+    <mat-step>
+        <ng-template matStepLabel>Quartier</ng-template>
+        <p class="desciprtion">In welchem Quartier wohnst du?</p>
+      <form>
+        
+        <mat-form-field  appearance="outline">
+            <mat-select (selectionChange)="stepper.next()" [(value)]="district">
+                <mat-option value="Innere Stadt">Innere Stadt</mat-option>
+                <mat-option value="Länggasse-Felsenau">Länggasse-Felsenau</mat-option>
+                <mat-option value="Mattenhof-Weissenbühl">Mattenhof-Weissenbühl</mat-option>
+                <mat-option value="Kirchenfeld-Schlosshalde">Kirchenfeld-Schlosshalde</mat-option>
+                <mat-option value="Breitenrain-Lorraine">Breitenrain-Lorraine</mat-option>
+                <mat-option value="Bümpliz-Oberbottigen">Bümpliz-Oberbottigen</mat-option>
+              </mat-select>
+          </mat-form-field>
+      </form>
+    </mat-step>
+    <mat-step>
+        <ng-template matStepLabel>Zimmer</ng-template>
+        <p class="desciprtion">Wieviele Zimmer hat deine Wohnung?</p>
+      <form>
+        <mat-form-field appearance="outline">
+            <mat-select (selectionChange)="stepper.next()"  [(value)]="rooms">
+                <mat-option value="1">1</mat-option>
+                <mat-option value="2">2</mat-option>
+                <mat-option value="3">3</mat-option>
+                <mat-option value="4">4</mat-option>
+                <mat-option value="5">5</mat-option>
+              </mat-select>
+          </mat-form-field>
+      </form>
+    </mat-step>
+    <mat-step>
+        <ng-template matStepLabel>Miete</ng-template>
+        <p class="desciprtion">Wie hoch ist die monatliche Miete in CHF?</p>
+        <form>
+            <mat-form-field appearance="outline">
+                <input matInput type="number" [(ngModel)]="rent" name="rent">
+              </mat-form-field>
+        </form>
+        <button [hidden]="!rent" mat-button matStepperNext>Resultat berechnen</button>
+      </mat-step>
+    <mat-step>
+      <ng-template matStepLabel>Resultat</ng-template>
+      <div *ngIf="!paysTooMuch()">
+        Yeah, du zahlst weniger als nötig! 
+      </div>
+
+      <div *ngIf="paysTooMuch()">
+        Die Miethaie verlangen zuviel!
+      </div>
+
+      <p>Der Median Mietpreis im {{district}} Quartier für {{rooms}} Zimmer beträgt {{getMedianRent()}} CHF</p>
+      <div>
+        <button mat-button (click)="stepper.reset()">zurücksetzen</button>
+      </div>
+    </mat-step>
+  </mat-vertical-stepper>
