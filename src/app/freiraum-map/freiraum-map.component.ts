@@ -43,6 +43,7 @@ export class FreiraumMapComponent implements OnDestroy, OnInit {
         attribution: '',
       }),
     ],
+    attributionControl: false,
     zoom: 14,
     // center RS
     center: latLng(46.952899502247114, 7.440898726295784),
