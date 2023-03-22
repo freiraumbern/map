@@ -27,6 +27,7 @@ import { SquatDialogComponent } from '../squat-dialog/squat-dialog.component';
 import { interpolateRainbow } from 'd3-scale-chromatic';
 import { Chance } from 'chance';
 import { ColonialDialogComponent } from '../colonial-dialog/colonial-dialog.component';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-freiraum-map',
@@ -127,10 +128,17 @@ export class FreiraumMapComponent implements OnDestroy, OnInit {
 
   colors: string[] = [];
 
+  /**
+   * a list of egrids to show on load from query param -> qr codes
+   */
+  urlEgridsLayerGroup: LayerGroup<Marker> | null = null;
+  urlEgrids: string[] = [];
+
   constructor(
     private httpService: HttpService,
     private zone: NgZone,
-    private dialog: MatDialog
+    private dialog: MatDialog,
+    private route: ActivatedRoute
   ) {
     for (let i = 0; i < 50; i++) {
       const value = (1 / 50) * i;
@@ -141,12 +149,21 @@ export class FreiraumMapComponent implements OnDestroy, OnInit {
   }
 
   ngOnInit() {
+    this.route.queryParams.subscribe(params => {
+      const urlEgrids = params['egrids']?.split(',');
+      if (urlEgrids?.length > 0) {
+        this.urlEgrids = urlEgrids;
+        console.log('got egrids', urlEgrids);
+      }
+    });
+
     forkJoin(
       this.httpService.getData(),
       this.httpService.getDataByOwner()
     ).subscribe(([egridData, byOwnerData]) => {
       this.egridData = egridData;
       this.byOwnerData = byOwnerData;
+      this.displayUrlEgrids(this.urlEgrids);
     });
 
     this.httpService.getSquats().subscribe(squats => {
@@ -161,6 +178,28 @@ export class FreiraumMapComponent implements OnDestroy, OnInit {
       this.colonialLocations = colonialLocations;
       this.createColonialLocationLayerGroup();
     });
+  }
+
+  displayUrlEgrids(egrids: string[]) {
+    console.log('egrids', egrids);
+    const markers: Marker[] = [];
+    egrids.forEach(egrid => {
+      markers.push(
+        marker(this.getEgridMarkerCoordinates(egrid), {
+          icon: this.getDivIcon('#AA336A'),
+        }).on('click', () => {
+          this.zone.run(() => {
+            this.dialog.open(EgridDialogComponent, {
+              data: this.egridData[egrid],
+              width: '95vw',
+              maxWidth: '100vw',
+            });
+          });
+        })
+      );
+    });
+    this.urlEgridsLayerGroup = new LayerGroup(markers);
+    console.log(this.urlEgridsLayerGroup);
   }
 
   createSquatLayerGroup() {

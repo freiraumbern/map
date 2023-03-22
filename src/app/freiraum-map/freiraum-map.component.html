@@ -20,6 +20,7 @@
     <div *ngIf="squatsLayerGroup && showSquats" [leafletLayer]="squatsLayerGroup"></div>
     <div *ngIf="femicidesLayerGroup && showFemicides" [leafletLayer]="femicidesLayerGroup"></div>
     <div *ngIf="colonialLocationsLayerGroup && showColonialLocations" [leafletLayer]="colonialLocationsLayerGroup"></div>
+    <div *ngIf="urlEgridsLayerGroup" [leafletLayer]="urlEgridsLayerGroup"></div>
   </div>
   <app-map-caption-area
     [hidden]="byOwnerSelection.length === 0"
