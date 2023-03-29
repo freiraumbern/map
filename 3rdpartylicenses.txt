@@ -117,6 +117,12 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 
+@ngx-matomo/router
+MIT
+
+@ngx-matomo/tracker
+MIT
+
 @swimlane/ngx-datatable
 MIT
 (The MIT License)
