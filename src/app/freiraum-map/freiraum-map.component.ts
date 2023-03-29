@@ -153,7 +153,6 @@ export class FreiraumMapComponent implements OnDestroy, OnInit {
       const urlEgrids = params['egrids']?.split(',');
       if (urlEgrids?.length > 0) {
         this.urlEgrids = urlEgrids;
-        console.log('got egrids', urlEgrids);
       }
     });
 
@@ -181,7 +180,6 @@ export class FreiraumMapComponent implements OnDestroy, OnInit {
   }
 
   displayUrlEgrids(egrids: string[]) {
-    console.log('egrids', egrids);
     const markers: Marker[] = [];
     egrids.forEach(egrid => {
       markers.push(
@@ -199,7 +197,6 @@ export class FreiraumMapComponent implements OnDestroy, OnInit {
       );
     });
     this.urlEgridsLayerGroup = new LayerGroup(markers);
-    console.log(this.urlEgridsLayerGroup);
   }
 
   createSquatLayerGroup() {
