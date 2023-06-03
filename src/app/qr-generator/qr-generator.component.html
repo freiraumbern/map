@@ -1,0 +1,24 @@
+<div class="info" *ngIf="data.length === 0">
+  Um Einräge für den QR Code Druck hinzufügen zu können musst du auf der Karte
+  einzelne Eigetum Einträge auswählen und im Popup auf den Button klicken
+</div>
+
+<button class="info"  *ngIf="data.length > 0" mat-flat-button color="primary" (click)="print()">
+  QR Codes generieren
+</button>
+
+<button class="warn"  *ngIf="data.length > 0" mat-flat-button color="primary" (click)="removeAll()">
+Alle entfernen
+</button>
+
+<mat-nav-list>
+  <div mat-subheader>Einträge Für den QR Code Druck</div>
+  <mat-list-item *ngFor="let item of data">
+    <mat-icon matListItemIcon>folder</mat-icon>
+    <div matListItemTitle>{{ item.ownership.egrid }}</div>
+    <div matListItemLine>{{ item.ownership.address }}</div>
+    <button mat-icon-button (click)="remove(item.ownership.egrid)" matListItemMeta>
+      <mat-icon>close</mat-icon>
+   </button>
+  </mat-list-item>
+</mat-nav-list>
