@@ -7,16 +7,18 @@
   QR Codes generieren
 </button>
 
-<mat-list>
+<button class="warn"  *ngIf="data.length > 0" mat-flat-button color="primary" (click)="removeAll()">
+Alle entfernen
+</button>
+
+<mat-nav-list>
   <div mat-subheader>Einträge Für den QR Code Druck</div>
   <mat-list-item *ngFor="let item of data">
     <mat-icon matListItemIcon>folder</mat-icon>
     <div matListItemTitle>{{ item.ownership.egrid }}</div>
     <div matListItemLine>{{ item.ownership.address }}</div>
-    <p matListItemLine (click)="remove(item.ownership.egrid)">
-      <button mat-flat-button color="warn" >
-        Entfernen
-      </button>
-    </p>
+    <button mat-icon-button (click)="remove(item.ownership.egrid)" matListItemMeta>
+      <mat-icon>close</mat-icon>
+   </button>
   </mat-list-item>
-</mat-list>
+</mat-nav-list>

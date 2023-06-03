@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { QRService } from '../qr.service';
 import { Egrid } from '../model/api';
 import * as QC from 'qrcode';
-import {jsPDF} from 'jspdf'
+import { jsPDF } from 'jspdf';
 
 @Component({
   selector: 'app-qr-generator',
@@ -21,8 +21,12 @@ export class QrGeneratorComponent {
   }
 
   remove(egrid: string) {
-    console.log('sadfdsf', egrid);
     this.qrService.removeEgrid(egrid);
+    this.loadData();
+  }
+
+  removeAll() {
+    this.qrService.setQRData({});
     this.loadData();
   }
 
@@ -36,28 +40,32 @@ export class QrGeneratorComponent {
     let itemCOunter = 0;
     let pageCounter = 1;
     for (const egrid of this.data) {
-      const qrcodeDataUrl= await QC.toDataURL("https://unlock-the.city?egrid=" + egrid.ownership.egrid)
+      const qrcodeDataUrl = await QC.toDataURL(
+        'https://unlock-the.city/#/?egrids=' + egrid.ownership.egrid
+      );
       pdf.setFontSize(15);
-      pdf.text(egrid.ownership.owners.join(", "), 43, heightTracker)
+      pdf.text(egrid.ownership.owners.join(', '), 43, heightTracker);
       pdf.setFontSize(10);
       pdf.text(egrid.ownership.address, 43, heightTracker + 5);
-      pdf.text("Wem gehört die Stadt? Wer darf sich frei darin bewegen? Kampagne zur Raumfrage mit Vorträgen, Aktionen und Onlinekarte",43,  heightTracker + 10)
-      pdf.text("https://unlock-the.city", 43, heightTracker + 20);
-      pdf.addImage(qrcodeDataUrl, 'png', 0, heightTracker -8, 40, 40);
+      pdf.text(
+        'Wem gehört die Stadt? Wer darf sich frei darin bewegen? Kampagne zur Raumfrage mit Vorträgen, Aktionen und Onlinekarte',
+        43,
+        heightTracker + 10
+      );
+      pdf.text('https://unlock-the.city', 43, heightTracker + 20);
+      pdf.addImage(qrcodeDataUrl, 'png', 0, heightTracker - 8, 40, 40);
 
       heightTracker += 40;
-      itemCOunter +=1
+      itemCOunter += 1;
 
       if (itemCOunter % 5 === 0) {
-        pdf.addPage()
+        pdf.addPage();
         pageCounter += 1;
         heightTracker = 10;
-        pdf.setPage(pageCounter)
+        pdf.setPage(pageCounter);
       }
     }
-   
 
-   
     pdf.save('generated.pdf');
   }
 }

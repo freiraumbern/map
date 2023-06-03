@@ -25,6 +25,6 @@ export class EgridDialogComponent {
   }
 
   addToQRGenerator(): void {
-    this.qrService.addEgrid(this.data)
+    this.qrService.addEgrid(this.data);
   }
 }
