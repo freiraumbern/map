@@ -27,6 +27,7 @@
     <iframe [src]="getGoogleMapUrl(data.ownership.address)" frameborder="0" style="border:0" allowfullscreen></iframe>
 </div>
 <div mat-dialog-actions>
+  <button (click)="addToQRGenerator()" mat-flat-button color="primary" mat-dialog-close>Zum QR Generator hinzufügen</button>
   <button mat-flat-button color="primary" mat-dialog-close>Schliessen</button>
 </div>
 
