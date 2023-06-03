@@ -41,6 +41,7 @@ import { MatStepperModule } from '@angular/material/stepper';
 import { FormsModule } from '@angular/forms';
 import { NgxMatomoTrackerModule } from '@ngx-matomo/tracker';
 import { NgxMatomoRouterModule } from '@ngx-matomo/router';
+import { QrGeneratorComponent } from './qr-generator/qr-generator.component';
 
 @NgModule({
   declarations: [
@@ -55,6 +56,7 @@ import { NgxMatomoRouterModule } from '@ngx-matomo/router';
     WelcomeComponent,
     ColonialDialogComponent,
     CalculatorComponent,
+    QrGeneratorComponent,
   ],
   imports: [
     BrowserModule,
