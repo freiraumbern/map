@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { ByOwnerDataAggregation } from '../model/api';
-import * as tinycolor from 'tinycolor2';
+import { TinyColor } from '@ctrl/tinycolor';
 
 @Component({
   selector: 'app-map-caption-area',
@@ -12,7 +12,7 @@ export class MapCaptionAreaComponent {
   @Input() colors: string[] = [];
 
   getBackGroundColor(color: string): boolean {
-    const tColor = tinycolor(color);
+    const tColor = new TinyColor(color);
     return tColor.getBrightness() > 128;
   }
 }
