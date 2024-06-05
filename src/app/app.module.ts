@@ -39,8 +39,6 @@ import { ColonialDialogComponent } from './colonial-dialog/colonial-dialog.compo
 import { CalculatorComponent } from './calculator/calculator.component';
 import { MatStepperModule } from '@angular/material/stepper';
 import { FormsModule } from '@angular/forms';
-import { NgxMatomoTrackerModule } from '@ngx-matomo/tracker';
-import { NgxMatomoRouterModule } from '@ngx-matomo/router';
 import { QrGeneratorComponent } from './qr-generator/qr-generator.component';
 
 @NgModule({
@@ -86,12 +84,7 @@ import { QrGeneratorComponent } from './qr-generator/qr-generator.component';
     MatCheckboxModule,
     MatStepperModule,
     MatInputModule,
-    FormsModule,
-    NgxMatomoTrackerModule.forRoot({
-      trackerUrl: 'https://datamining.immerda.ch',
-      siteId: '70',
-    }),
-    NgxMatomoRouterModule,
+    FormsModule
   ],
   providers: [
     HttpService,
